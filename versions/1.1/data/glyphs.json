@@ -1,0 +1,1248 @@
+{
+  "name": "Trochos",
+  "version": "1.1",
+  "coordinateSystem": "normalized radius=111, viewBox=-175 -175 350 350",
+  "units": {
+    "rotation": "radians",
+    "phase": "radians",
+    "hue": "degrees",
+    "scale": "relative to 111 units"
+  },
+  "lexicalLimit": 3,
+  "compositionsAreExceptions": true,
+  "catalog": [
+    {
+      "id": "being",
+      "name": "Being",
+      "group": "Concept",
+      "gloss": "Existence, presence before a specified event.",
+      "layout": "radial",
+      "parts": [
+        {
+          "family": "astroid",
+          "scale": 0.62,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.2,
+          "phase": 0,
+          "hue": 205
+        }
+      ]
+    },
+    {
+      "id": "self",
+      "name": "Self",
+      "group": "Concept",
+      "gloss": "The situated identity that participates in a relation.",
+      "layout": "radial",
+      "parts": [
+        {
+          "family": "nephroid",
+          "scale": 0.55,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.3,
+          "hue": 344
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "name": "Other",
+      "group": "Concept",
+      "gloss": "An identity encountered but not identified as oneself.",
+      "layout": "radial",
+      "parts": [
+        {
+          "family": "nephroid",
+          "scale": 0.47,
+          "x": 0.2,
+          "y": 0,
+          "rotation": 0.34,
+          "phase": 0.5,
+          "hue": 245
+        },
+        {
+          "family": "astroid",
+          "scale": 0.27,
+          "x": -0.24,
+          "y": 0,
+          "rotation": 0.1,
+          "phase": 0.2,
+          "hue": 203
+        }
+      ]
+    },
+    {
+      "id": "object",
+      "name": "Object",
+      "group": "Concept",
+      "gloss": "A bounded referent.",
+      "layout": "radial",
+      "parts": [
+        {
+          "family": "astroid",
+          "scale": 0.65,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.7853981633974483,
+          "phase": 0,
+          "hue": 213
+        }
+      ]
+    },
+    {
+      "id": "space",
+      "name": "Space",
+      "group": "Concept",
+      "gloss": "An encompassing domain.",
+      "layout": "nested",
+      "parts": [
+        {
+          "family": "astroid",
+          "scale": 0.82,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.3,
+          "hue": 197
+        },
+        {
+          "family": "astroid",
+          "scale": 0.36,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.7853981633974483,
+          "phase": 0.2,
+          "hue": 195
+        }
+      ]
+    },
+    {
+      "id": "time",
+      "name": "Time",
+      "group": "Concept",
+      "gloss": "An occurrence within a stable frame.",
+      "layout": "nested",
+      "parts": [
+        {
+          "family": "astroid",
+          "scale": 0.77,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0,
+          "hue": 217
+        },
+        {
+          "family": "cycloid",
+          "scale": 0.39,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.3,
+          "hue": 211
+        }
+      ]
+    },
+    {
+      "id": "past",
+      "name": "Past",
+      "group": "Concept",
+      "gloss": "A completed event retained within a boundary.",
+      "layout": "nested",
+      "parts": [
+        {
+          "family": "astroid",
+          "scale": 0.77,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0,
+          "hue": 218
+        },
+        {
+          "family": "curtate",
+          "scale": 0.3,
+          "x": 0,
+          "y": 0,
+          "rotation": -0.32,
+          "phase": 0.5,
+          "hue": 223
+        }
+      ]
+    },
+    {
+      "id": "future",
+      "name": "Future",
+      "group": "Concept",
+      "gloss": "A projected event extending beyond the present.",
+      "layout": "intersection",
+      "parts": [
+        {
+          "family": "astroid",
+          "scale": 0.44,
+          "x": -0.23,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.4,
+          "hue": 221
+        },
+        {
+          "family": "prolate",
+          "scale": 0.53,
+          "x": 0.25,
+          "y": 0,
+          "rotation": 0.25,
+          "phase": 0.9,
+          "hue": 278
+        }
+      ]
+    },
+    {
+      "id": "present",
+      "name": "Present",
+      "group": "Concept",
+      "gloss": "An occurrence in tangent proximity to its frame.",
+      "layout": "tangent",
+      "parts": [
+        {
+          "family": "astroid",
+          "scale": 0.59,
+          "x": -0.1,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.2,
+          "hue": 207
+        },
+        {
+          "family": "cycloid",
+          "scale": 0.3,
+          "x": 0.3,
+          "y": 0,
+          "rotation": 1.5707963267948966,
+          "phase": 0.1,
+          "hue": 178
+        }
+      ]
+    },
+    {
+      "id": "quantity",
+      "name": "Quantity",
+      "group": "Concept",
+      "gloss": "Relative abundance within a category.",
+      "layout": "nested",
+      "parts": [
+        {
+          "family": "astroid",
+          "scale": 0.74,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0,
+          "hue": 206
+        },
+        {
+          "family": "astroid",
+          "scale": 0.28,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.7853981633974483,
+          "phase": 0.4,
+          "hue": 205
+        }
+      ]
+    },
+    {
+      "id": "one",
+      "name": "One",
+      "group": "Concept",
+      "gloss": "Singular bounded unit.",
+      "layout": "radial",
+      "parts": [
+        {
+          "family": "astroid",
+          "scale": 0.48,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.1,
+          "hue": 210
+        }
+      ]
+    },
+    {
+      "id": "many",
+      "name": "Many",
+      "group": "Concept",
+      "gloss": "Multiplicity without lexical enumeration.",
+      "layout": "intersection",
+      "parts": [
+        {
+          "family": "astroid",
+          "scale": 0.44,
+          "x": -0.27,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0,
+          "hue": 220
+        },
+        {
+          "family": "astroid",
+          "scale": 0.44,
+          "x": 0.27,
+          "y": 0,
+          "rotation": 0.7853981633974483,
+          "phase": 0.5,
+          "hue": 217
+        }
+      ]
+    },
+    {
+      "id": "order",
+      "name": "Order",
+      "group": "Concept",
+      "gloss": "Stable categories sharing an origin.",
+      "layout": "concentric",
+      "parts": [
+        {
+          "family": "astroid",
+          "scale": 0.78,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0,
+          "hue": 203
+        },
+        {
+          "family": "astroid",
+          "scale": 0.42,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.7853981633974483,
+          "phase": 0.4,
+          "hue": 198
+        }
+      ]
+    },
+    {
+      "id": "change",
+      "name": "Change",
+      "group": "Action",
+      "gloss": "Transformation within an identifiable frame.",
+      "layout": "intersection",
+      "parts": [
+        {
+          "family": "astroid",
+          "scale": 0.68,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.2,
+          "hue": 207
+        },
+        {
+          "family": "cycloid",
+          "scale": 0.4,
+          "x": 0.12,
+          "y": -0.08,
+          "rotation": 0.47,
+          "phase": 1,
+          "hue": 334
+        }
+      ]
+    },
+    {
+      "id": "move",
+      "name": "Move",
+      "group": "Action",
+      "gloss": "Directed occurrence, without prescribed destination.",
+      "layout": "radial",
+      "parts": [
+        {
+          "family": "cycloid",
+          "scale": 0.65,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.28,
+          "phase": 0.2,
+          "hue": 178
+        }
+      ]
+    },
+    {
+      "id": "stop",
+      "name": "Stop",
+      "group": "Action",
+      "gloss": "Flow checked by a boundary.",
+      "layout": "intersection",
+      "parts": [
+        {
+          "family": "cycloid",
+          "scale": 0.51,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.2,
+          "hue": 183
+        },
+        {
+          "family": "astroid",
+          "scale": 0.52,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.7853981633974483,
+          "phase": 0.6,
+          "hue": 217
+        }
+      ]
+    },
+    {
+      "id": "start",
+      "name": "Start",
+      "group": "Action",
+      "gloss": "The onset of a process.",
+      "layout": "tangent",
+      "parts": [
+        {
+          "family": "cycloid",
+          "scale": 0.46,
+          "x": -0.2,
+          "y": 0,
+          "rotation": -0.4,
+          "phase": 0.8,
+          "hue": 148
+        },
+        {
+          "family": "astroid",
+          "scale": 0.39,
+          "x": 0.23,
+          "y": 0,
+          "rotation": 0.7853981633974483,
+          "phase": 0.3,
+          "hue": 220
+        }
+      ]
+    },
+    {
+      "id": "end",
+      "name": "End",
+      "group": "Action",
+      "gloss": "The closure or termination of a process.",
+      "layout": "nested",
+      "parts": [
+        {
+          "family": "curtate",
+          "scale": 0.48,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.2,
+          "phase": 0.1,
+          "hue": 245
+        },
+        {
+          "family": "astroid",
+          "scale": 0.56,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.9,
+          "hue": 205
+        }
+      ]
+    },
+    {
+      "id": "give",
+      "name": "Give",
+      "group": "Action",
+      "gloss": "A relation oriented toward release.",
+      "layout": "intersection",
+      "parts": [
+        {
+          "family": "nephroid",
+          "scale": 0.46,
+          "x": -0.18,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.2,
+          "hue": 336
+        },
+        {
+          "family": "prolate",
+          "scale": 0.43,
+          "x": 0.23,
+          "y": 0,
+          "rotation": 0.35,
+          "phase": 1,
+          "hue": 30
+        }
+      ]
+    },
+    {
+      "id": "receive",
+      "name": "Receive",
+      "group": "Action",
+      "gloss": "A relation oriented toward holding.",
+      "layout": "intersection",
+      "parts": [
+        {
+          "family": "nephroid",
+          "scale": 0.49,
+          "x": 0.18,
+          "y": 0,
+          "rotation": 0.2,
+          "phase": 0.4,
+          "hue": 334
+        },
+        {
+          "family": "curtate",
+          "scale": 0.34,
+          "x": -0.25,
+          "y": 0,
+          "rotation": -0.33,
+          "phase": 0.3,
+          "hue": 52
+        }
+      ]
+    },
+    {
+      "id": "know",
+      "name": "Know",
+      "group": "Action",
+      "gloss": "An occurrence integrated in an existing structure.",
+      "layout": "nested",
+      "parts": [
+        {
+          "family": "astroid",
+          "scale": 0.75,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.4,
+          "hue": 207
+        },
+        {
+          "family": "curtate",
+          "scale": 0.34,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.3,
+          "phase": 0.6,
+          "hue": 225
+        }
+      ]
+    },
+    {
+      "id": "seek",
+      "name": "Seek",
+      "group": "Action",
+      "gloss": "A projection toward an unresolved relation.",
+      "layout": "intersection",
+      "parts": [
+        {
+          "family": "prolate",
+          "scale": 0.51,
+          "x": -0.2,
+          "y": 0,
+          "rotation": 0.35,
+          "phase": 0.4,
+          "hue": 270
+        },
+        {
+          "family": "nephroid",
+          "scale": 0.41,
+          "x": 0.27,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.6,
+          "hue": 324
+        }
+      ]
+    },
+    {
+      "id": "speak",
+      "name": "Speak",
+      "group": "Action",
+      "gloss": "An expressed event entering relation.",
+      "layout": "intersection",
+      "parts": [
+        {
+          "family": "cycloid",
+          "scale": 0.5,
+          "x": -0.17,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.7,
+          "hue": 193
+        },
+        {
+          "family": "nephroid",
+          "scale": 0.43,
+          "x": 0.22,
+          "y": 0,
+          "rotation": 0.22,
+          "phase": 0.2,
+          "hue": 327
+        }
+      ]
+    },
+    {
+      "id": "remember",
+      "name": "Remember",
+      "group": "Action",
+      "gloss": "A past occurrence held in relation.",
+      "layout": "nested",
+      "parts": [
+        {
+          "family": "nephroid",
+          "scale": 0.53,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.1,
+          "phase": 0.4,
+          "hue": 332
+        },
+        {
+          "family": "curtate",
+          "scale": 0.26,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.42,
+          "phase": 0.1,
+          "hue": 224
+        }
+      ]
+    },
+    {
+      "id": "forget",
+      "name": "Forget",
+      "group": "Action",
+      "gloss": "A loosening between an event and its prior frame.",
+      "layout": "radial",
+      "parts": [
+        {
+          "family": "curtate",
+          "scale": 0.32,
+          "x": -0.32,
+          "y": 0,
+          "rotation": -0.3,
+          "phase": 0.4,
+          "hue": 227
+        },
+        {
+          "family": "nephroid",
+          "scale": 0.39,
+          "x": 0.32,
+          "y": 0,
+          "rotation": 0.42,
+          "phase": 0.6,
+          "hue": 298
+        }
+      ]
+    },
+    {
+      "id": "together",
+      "name": "Together",
+      "group": "Relation",
+      "gloss": "Distinct participants held in a single relation.",
+      "layout": "intersection",
+      "parts": [
+        {
+          "family": "nephroid",
+          "scale": 0.49,
+          "x": -0.18,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.1,
+          "hue": 340
+        },
+        {
+          "family": "nephroid",
+          "scale": 0.49,
+          "x": 0.18,
+          "y": 0,
+          "rotation": 3.141592653589793,
+          "phase": 0.7,
+          "hue": 345
+        }
+      ]
+    },
+    {
+      "id": "apart",
+      "name": "Apart",
+      "group": "Relation",
+      "gloss": "Coexisting identities without contact.",
+      "layout": "radial",
+      "parts": [
+        {
+          "family": "nephroid",
+          "scale": 0.34,
+          "x": -0.48,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.4,
+          "hue": 233
+        },
+        {
+          "family": "nephroid",
+          "scale": 0.34,
+          "x": 0.48,
+          "y": 0,
+          "rotation": 0.2,
+          "phase": 0.9,
+          "hue": 230
+        }
+      ]
+    },
+    {
+      "id": "trust",
+      "name": "Trust",
+      "group": "Relation",
+      "gloss": "A vulnerable relation held within a stable structure.",
+      "layout": "nested",
+      "parts": [
+        {
+          "family": "astroid",
+          "scale": 0.8,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.7853981633974483,
+          "phase": 0,
+          "hue": 218
+        },
+        {
+          "family": "nephroid",
+          "scale": 0.33,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.3,
+          "hue": 342
+        }
+      ]
+    },
+    {
+      "id": "conflict",
+      "name": "Conflict",
+      "group": "Relation",
+      "gloss": "A relational field intersected by tension.",
+      "layout": "intersection",
+      "parts": [
+        {
+          "family": "nephroid",
+          "scale": 0.55,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0,
+          "hue": 340
+        },
+        {
+          "family": "deltoid",
+          "scale": 0.39,
+          "x": 0.18,
+          "y": 0,
+          "rotation": 0.3,
+          "phase": 0.7,
+          "hue": 284
+        }
+      ]
+    },
+    {
+      "id": "belong",
+      "name": "Belong",
+      "group": "Relation",
+      "gloss": "An identity contained by a shared relation.",
+      "layout": "nested",
+      "parts": [
+        {
+          "family": "nephroid",
+          "scale": 0.6,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.3,
+          "hue": 341
+        },
+        {
+          "family": "astroid",
+          "scale": 0.24,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.7853981633974483,
+          "phase": 0.6,
+          "hue": 194
+        }
+      ]
+    },
+    {
+      "id": "freedom",
+      "name": "Freedom",
+      "group": "Relation",
+      "gloss": "An occurrence that exceeds a former boundary.",
+      "layout": "intersection",
+      "parts": [
+        {
+          "family": "astroid",
+          "scale": 0.44,
+          "x": -0.15,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.2,
+          "hue": 206
+        },
+        {
+          "family": "prolate",
+          "scale": 0.6,
+          "x": 0.25,
+          "y": 0,
+          "rotation": -0.28,
+          "phase": 0.8,
+          "hue": 161
+        }
+      ]
+    },
+    {
+      "id": "love",
+      "name": "Love",
+      "group": "Emotion",
+      "gloss": "Warm, receptive, durable relational attachment.",
+      "layout": "concentric",
+      "parts": [
+        {
+          "family": "nephroid",
+          "scale": 0.63,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.4,
+          "hue": 348
+        },
+        {
+          "family": "nephroid",
+          "scale": 0.31,
+          "x": 0,
+          "y": 0,
+          "rotation": 1.5707963267948966,
+          "phase": 0.8,
+          "hue": 349
+        }
+      ]
+    },
+    {
+      "id": "joy",
+      "name": "Joy",
+      "group": "Emotion",
+      "gloss": "High-arousal positive expansion.",
+      "layout": "nested",
+      "parts": [
+        {
+          "family": "prolate",
+          "scale": 0.63,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.2,
+          "hue": 37
+        },
+        {
+          "family": "cycloid",
+          "scale": 0.28,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.7853981633974483,
+          "phase": 0.4,
+          "hue": 46
+        }
+      ]
+    },
+    {
+      "id": "grief",
+      "name": "Grief",
+      "group": "Emotion",
+      "gloss": "Painful inward retention after loss.",
+      "layout": "nested",
+      "parts": [
+        {
+          "family": "curtate",
+          "scale": 0.57,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.35,
+          "phase": 0.3,
+          "hue": 252
+        },
+        {
+          "family": "nephroid",
+          "scale": 0.27,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.13,
+          "phase": 0.5,
+          "hue": 264
+        }
+      ]
+    },
+    {
+      "id": "fear",
+      "name": "Fear",
+      "group": "Emotion",
+      "gloss": "Anticipatory tension against an uncertain exterior.",
+      "layout": "intersection",
+      "parts": [
+        {
+          "family": "deltoid",
+          "scale": 0.53,
+          "x": -0.16,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.3,
+          "hue": 276
+        },
+        {
+          "family": "prolate",
+          "scale": 0.46,
+          "x": 0.2,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.6,
+          "hue": 285
+        }
+      ]
+    },
+    {
+      "id": "anger",
+      "name": "Anger",
+      "group": "Emotion",
+      "gloss": "Intensified opposing tension.",
+      "layout": "intersection",
+      "parts": [
+        {
+          "family": "deltoid",
+          "scale": 0.62,
+          "x": -0.13,
+          "y": 0,
+          "rotation": 0.1,
+          "phase": 0.3,
+          "hue": 4
+        },
+        {
+          "family": "deltoid",
+          "scale": 0.48,
+          "x": 0.23,
+          "y": 0,
+          "rotation": 1.0471975511965976,
+          "phase": 0.8,
+          "hue": 347
+        }
+      ]
+    },
+    {
+      "id": "calm",
+      "name": "Calm",
+      "group": "Emotion",
+      "gloss": "Low-arousal stable containment.",
+      "layout": "nested",
+      "parts": [
+        {
+          "family": "curtate",
+          "scale": 0.53,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.3,
+          "hue": 189
+        },
+        {
+          "family": "astroid",
+          "scale": 0.28,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.7853981633974483,
+          "phase": 0.4,
+          "hue": 193
+        }
+      ]
+    },
+    {
+      "id": "hope",
+      "name": "Hope",
+      "group": "Emotion",
+      "gloss": "Positive future-oriented possibility.",
+      "layout": "nested",
+      "parts": [
+        {
+          "family": "prolate",
+          "scale": 0.52,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.1,
+          "phase": 0.2,
+          "hue": 111
+        },
+        {
+          "family": "nephroid",
+          "scale": 0.31,
+          "x": 0,
+          "y": 0,
+          "rotation": 1.5707963267948966,
+          "phase": 0.7,
+          "hue": 125
+        }
+      ]
+    },
+    {
+      "id": "longing",
+      "name": "Longing",
+      "group": "Emotion",
+      "gloss": "Attachment stretched across distance.",
+      "layout": "radial",
+      "parts": [
+        {
+          "family": "nephroid",
+          "scale": 0.37,
+          "x": -0.37,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.3,
+          "hue": 325
+        },
+        {
+          "family": "prolate",
+          "scale": 0.39,
+          "x": 0.38,
+          "y": 0,
+          "rotation": -0.3,
+          "phase": 0.9,
+          "hue": 309
+        }
+      ]
+    },
+    {
+      "id": "shame",
+      "name": "Shame",
+      "group": "Emotion",
+      "gloss": "Self-relation compressed by negative judgment.",
+      "layout": "nested",
+      "parts": [
+        {
+          "family": "nephroid",
+          "scale": 0.51,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.2,
+          "hue": 275
+        },
+        {
+          "family": "deltoid",
+          "scale": 0.27,
+          "x": 0,
+          "y": 0,
+          "rotation": 1.0471975511965976,
+          "phase": 0.4,
+          "hue": 290
+        }
+      ]
+    },
+    {
+      "id": "pride",
+      "name": "Pride",
+      "group": "Emotion",
+      "gloss": "Positive self-assessment with outward projection.",
+      "layout": "intersection",
+      "parts": [
+        {
+          "family": "nephroid",
+          "scale": 0.47,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.1,
+          "phase": 0.4,
+          "hue": 39
+        },
+        {
+          "family": "prolate",
+          "scale": 0.45,
+          "x": 0.14,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.8,
+          "hue": 31
+        }
+      ]
+    },
+    {
+      "id": "surprise",
+      "name": "Surprise",
+      "group": "Emotion",
+      "gloss": "Unexpected event crossing an assumed boundary.",
+      "layout": "intersection",
+      "parts": [
+        {
+          "family": "astroid",
+          "scale": 0.52,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0,
+          "hue": 195
+        },
+        {
+          "family": "prolate",
+          "scale": 0.46,
+          "x": 0.13,
+          "y": 0.11,
+          "rotation": 0.7,
+          "phase": 0.5,
+          "hue": 36
+        }
+      ]
+    },
+    {
+      "id": "wonder",
+      "name": "Wonder",
+      "group": "Emotion",
+      "gloss": "Open, high-curiosity encounter with the unknown.",
+      "layout": "concentric",
+      "parts": [
+        {
+          "family": "cycloid",
+          "scale": 0.45,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.2,
+          "phase": 0.6,
+          "hue": 188
+        },
+        {
+          "family": "nephroid",
+          "scale": 0.42,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.65,
+          "phase": 0.2,
+          "hue": 274
+        }
+      ]
+    },
+    {
+      "id": "compassion",
+      "name": "Compassion",
+      "group": "Emotion",
+      "gloss": "Other-directed feeling contained in a bond.",
+      "layout": "nested",
+      "parts": [
+        {
+          "family": "nephroid",
+          "scale": 0.62,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.1,
+          "hue": 337
+        },
+        {
+          "family": "curtate",
+          "scale": 0.3,
+          "x": 0.04,
+          "y": 0,
+          "rotation": 0.33,
+          "phase": 0.4,
+          "hue": 54
+        }
+      ]
+    },
+    {
+      "id": "i-love-you-as-my-cat-my-demon-my-spirit",
+      "name": "I love you as my cat, my demon, my spirit",
+      "group": "Example",
+      "gloss": "A relational nephroid core with three protected external satellite identities. Four generators: a composition, not a strict lexical glyph.",
+      "layout": "radial",
+      "parts": [
+        {
+          "family": "nephroid",
+          "scale": 0.29,
+          "x": 0,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.2,
+          "hue": 349
+        },
+        {
+          "family": "curtate",
+          "scale": 0.16,
+          "x": -0.49,
+          "y": -0.25,
+          "rotation": 0.2,
+          "phase": 0.1,
+          "hue": 39
+        },
+        {
+          "family": "deltoid",
+          "scale": 0.16,
+          "x": 0.49,
+          "y": -0.2,
+          "rotation": 0.5,
+          "phase": 0.6,
+          "hue": 274
+        },
+        {
+          "family": "astroid",
+          "scale": 0.16,
+          "x": 0,
+          "y": 0.53,
+          "rotation": 0.7853981633974483,
+          "phase": 0.9,
+          "hue": 218
+        }
+      ]
+    },
+    {
+      "id": "i-love-you-as-my-partner-in-eternity",
+      "name": "I love you as my partner in eternity",
+      "group": "Example",
+      "gloss": "Two mirrored interlocking prolate cycloidal contours within a double platinum astroid boundary. Four generators: a composition.",
+      "layout": "intersection",
+      "parts": [
+        {
+          "family": "astroid",
+          "scale": 0.93,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.7853981633974483,
+          "phase": 0.2,
+          "hue": 213
+        },
+        {
+          "family": "astroid",
+          "scale": 0.84,
+          "x": 0,
+          "y": 0,
+          "rotation": 0.7853981633974483,
+          "phase": 0.4,
+          "hue": 213
+        },
+        {
+          "family": "prolate",
+          "scale": 0.5,
+          "x": -0.21,
+          "y": 0,
+          "rotation": 0,
+          "phase": 0.4,
+          "hue": 338
+        },
+        {
+          "family": "prolate",
+          "scale": 0.5,
+          "x": 0.21,
+          "y": 0,
+          "rotation": 3.141592653589793,
+          "phase": 0.7,
+          "hue": 348
+        }
+      ]
+    }
+  ]
+}
