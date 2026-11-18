@@ -2,11 +2,11 @@
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Trochos 2.0 — A Living Geometric Language</title>
 <style>
 :root{color-scheme:dark;--bg:#090b11;--pane:#11131c;--rim:#34313e;--muted:#aaa2b3;--text:#f3e9ef;--accent:#e4b3c3}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#211a29 0,#0b0c14 55%,#080a0f 100%);font:14px/1.55 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text)}button,input,select{font:inherit}button{cursor:pointer;border:1px solid #514557;background:#251e2b;color:var(--text);border-radius:9px;padding:9px 12px}button:hover{background:#35273c}button:focus-visible,input:focus-visible{outline:2px solid #e3a6bf;outline-offset:2px}h1,h2,h3,p{margin:0}h1{font-size:clamp(25px,4vw,38px);letter-spacing:-1.5px;font-weight:500}h2{font-size:18px;font-weight:500}h3{font-size:14px;font-weight:600}.wrap{max-width:1420px;margin:auto;padding:27px clamp(14px,3vw,36px)}.upper{font-size:10px;letter-spacing:2.4px;text-transform:uppercase;color:#baafc2}.subtitle{max-width:670px;color:var(--muted);font-size:13px;margin-top:8px}.layout{display:grid;grid-template-columns:minmax(0,1.33fr) minmax(310px,.78fr);gap:17px;margin-top:23px}.panel{border:1px solid var(--rim);border-radius:15px;background:linear-gradient(140deg,rgba(29,25,38,.9),rgba(13,15,23,.97));overflow:hidden}.pad{padding:18px}.flex{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.between{justify-content:space-between}.canvasWrap{position:relative;background:radial-gradient(ellipse at center,#211b2d 0,#11121c 53%,#0b0d14 100%);min-height:470px;display:grid;place-items:center;border-top:1px solid #2b2835;border-bottom:1px solid #2b2835}.canvasWrap svg{width:100%;max-width:710px;display:block;aspect-ratio:1.18}.canvasLabel{position:absolute;left:17px;top:15px;color:#8d8395;font-size:10px;letter-spacing:1.6px;pointer-events:none}.muted{color:var(--muted)}.tiny{font-size:11px}.small{font-size:12px}.divider{height:1px;background:#39313d;margin:14px 0}.range{width:100%;accent-color:#df9db9}.pill{display:inline-block;padding:3px 8px;border:1px solid #534554;border-radius:16px;color:#c9b4c6;font-size:10px;letter-spacing:.7px}.count{font-variant-numeric:tabular-nums}.recipes{height:590px;overflow:auto;padding:12px}.recipe{display:flex;align-items:center;width:100%;text-align:left;gap:11px;padding:9px;margin-bottom:6px;background:#161721;border:1px solid #35303e;border-radius:10px}.recipe.active{border-color:#cd9baa;background:#302331}.recipe svg{width:67px;height:67px;background:#10111a;border-radius:7px;flex:none}.recipe b{display:block;font-size:12px;font-weight:600}.recipe span{display:block;font-size:10px;color:#a79daf;line-height:1.35}.catalogHeader{padding:17px 17px 7px}.catalogTools{display:flex;gap:8px;margin-top:12px}input[type=search]{background:#13151f;border:1px solid #484052;color:#f8edf4;border-radius:8px;padding:10px;min-width:0;flex:1}.controls{display:grid;grid-template-columns:1fr 1fr;gap:14px}.controlLabel{display:flex;justify-content:space-between;font-size:11px;color:#bdafc0}.bar{height:4px;background:#362d3a;border-radius:4px;overflow:hidden}.bar>div{height:100%;background:linear-gradient(90deg,#b7779f,#f2c5b7);width:0}.code{white-space:pre-wrap;overflow-wrap:anywhere;font-size:11px;color:#d5c7d5;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#0c0e16;border:1px solid #302a37;border-radius:9px;padding:13px;max-height:300px;overflow:auto}.docs{margin-top:17px;padding:20px}.docs p{color:#bfb5c4;font-size:12px;margin:8px 0 12px}.docs table{width:100%;border-collapse:collapse;font-size:12px}.docs th,.docs td{padding:8px 10px;text-align:left;border-bottom:1px solid #302b39}.docs th{color:#e4c4d4;font-weight:500}.docs td{color:#bdb2c0}.caution{border-left:2px solid #c399a8;padding:9px 14px;background:#221b26;font-size:12px;color:#d9cad7}.gridCards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.glyphStat{padding:11px;border:1px solid #383140;border-radius:10px;background:#15141f}.glyphStat strong{display:block;font-size:12px;font-weight:600}.glyphStat span{font-size:11px;color:#a69aad}a{color:#e1b5ca}@media(max-width:890px){.layout{grid-template-columns:1fr}.recipes{height:400px}.canvasWrap{min-height:360px}}@media(max-width:500px){.controls{grid-template-columns:1fr}.canvasWrap{min-height:300px}.pad{padding:13px}}
-.v2nav{margin-top:13px;display:flex;gap:14px;flex-wrap:wrap;font-size:12px}.v2nav a{color:#efd1dd}.semanticNote{margin:10px 0 0;border-left:2px solid #b892ad;padding-left:11px;color:#c9bbc9;font-size:12px}.semanticNote b{color:#f1d8e4}.culturalNotes{margin-top:14px}.culturalNotes summary{cursor:pointer;color:#ead1dd;font-size:13px}.culturalNotes p{font-size:12px}.culturalNotes small{color:#cbb9c9}</style></head><body><main class="wrap">
-<header><div class="upper">Trochos 2.0 / Sacred geometry in feeling</div><h1>A language of relations</h1><p class="subtitle">The feeling comes first. Sacred geometric proportions quietly shape the relationships inside each Trochos glyph—love, grief, hope, memory, motion, and things—without turning words into generic patterns.</p><nav class="v2nav" aria-label="Version navigation"><a href="./compare.html">Compare 1.1 ↔ 2.0 graphically</a><a href="./versions/1.1/index.html">Original Trochos 1.1</a><a href="#cultural-variations">Cultural variations &amp; historical context</a></nav></header>
+.v2nav{margin-top:13px;display:flex;gap:14px;flex-wrap:wrap;font-size:12px}.v2nav a{color:#efd1dd}.semanticNote{margin:10px 0 0;border-left:2px solid #b892ad;padding-left:11px;color:#c9bbc9;font-size:12px}.semanticNote b{color:#f1d8e4}.culturalNotes{margin-top:14px}.culturalNotes summary{cursor:pointer;color:#ead1dd;font-size:13px}.culturalNotes p{font-size:12px}.culturalNotes small{color:#cbb9c9}.versionTitles{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 8px}.versionTitle{display:flex;gap:8px;align-items:baseline;text-decoration:none;color:#c6afc0;background:#17151f;border:1px solid #494153;border-radius:11px;padding:8px 19px;font-size:19px}.versionTitle span{font-size:12px;letter-spacing:1px;text-transform:uppercase}.versionTitle strong{font-size:23px;font-weight:550}.versionTitle.active{color:#f9e5ef;border-color:#dca9bf;background:#302231}.versionTitle:hover{background:#3c2c3e}</style></head><body><main class="wrap">
+<header><div class="upper">Trochos 2.0 / Sacred geometry in feeling</div><h1>A language of relations</h1><p class="subtitle">The original mathematics expresses every feeling, concept, and relationship. Version 2 adds a restrained construction derived from each curve’s own intersections, symmetry, proximity, and harmonic proportion—not a prescribed emotional symbol.</p><nav class="versionTitles" aria-label="Trochos versions"><a class="versionTitle" href="./v1.html"><span>Trochos</span><strong>1.1</strong></a><a class="versionTitle active" href="./index.html" aria-current="page"><span>Trochos</span><strong>2.0</strong></a></nav><nav class="v2nav" aria-label="Additional navigation"><a href="./compare.html">Compare versions graphically</a><a href="#cultural-variations">Cultural variations &amp; historical context</a></nav></header>
 <div class="layout"><section class="panel"><div class="pad flex between"><div><div class="upper" id="category">FOUNDATION</div><h2 id="name">Being</h2><p id="gloss" class="muted small">Presence or existence, prior to a specified relation.</p><div id="semanticNote" class="semanticNote" aria-live="polite"></div></div><span class="pill" id="count">01 / 44</span></div>
 <div class="canvasWrap"><div class="canvasLabel" id="status">EXECUTING · 0%</div><svg id="large" role="img" aria-label="Trochos geometric glyph animation" viewBox="-190 -185 380 370" xmlns="http://www.w3.org/2000/svg"><defs><filter id="lightbloom" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="3.7"/></filter></defs><g id="guides"></g><g id="scene"></g></svg></div>
-<div class="pad"><div class="flex between"><span class="upper">Geometric construction</span><span id="pct" class="tiny muted count">0%</span></div><div class="bar" style="margin:9px 0 13px"><div id="progress"></div></div><div class="flex" style="margin-bottom:16px"><button id="play">Pause</button><button id="restart">Restart trace</button><button id="prev" aria-label="Previous glyph">←</button><button id="next" aria-label="Next glyph">→</button><label class="tiny muted" style="margin-left:auto"><input id="loop" type="checkbox" checked> Loop</label></div><div class="controls"><div><label class="controlLabel" for="speed">Execution speed <output id="speedOut">1.0×</output></label><input class="range" id="speed" type="range" min=".25" max="3" value="1" step=".05"></div><div><label class="controlLabel" for="drift">Phase drift <output id="driftOut">0.15×</output></label><input class="range" id="drift" type="range" min="0" max="1" value=".15" step=".05"></div><div style="grid-column:1/-1"><label class="controlLabel" for="scrub">Trace position <output id="traceOut">0%</output></label><input class="range" id="scrub" type="range" min="0" max="1000" value="0"></div></div><div class="controls" style="margin-top:10px"><div><label class="controlLabel" for="morphTarget">Morph destination</label><select id="morphTarget" style="width:100%;background:#171621;color:#eee3ec;border:1px solid #4a4051;border-radius:8px;padding:7px"></select></div><div><label class="controlLabel" for="morph">Geometric crossfade <output id="morphOut">0%</output></label><input class="range" id="morph" type="range" min="0" max="100" value="0"></div></div><div class="divider"></div><div class="upper">Geometric structure / cone-fit projection</div><div class="controls" style="margin:12px 0 16px"><div style="grid-column:1/-1"><label class="controlLabel" for="structure">Circle + triangle prominence <output id="structureOut">85%</output></label><input class="range" id="structure" type="range" min="0" max="100" value="85" step="5"></div></div>
+<div class="pad"><div class="flex between"><span class="upper">Geometric construction</span><span id="pct" class="tiny muted count">0%</span></div><div class="bar" style="margin:9px 0 13px"><div id="progress"></div></div><div class="flex" style="margin-bottom:16px"><button id="play">Pause</button><button id="restart">Restart trace</button><button id="prev" aria-label="Previous glyph">←</button><button id="next" aria-label="Next glyph">→</button><label class="tiny muted" style="margin-left:auto"><input id="loop" type="checkbox" checked> Loop</label></div><div class="controls"><div><label class="controlLabel" for="speed">Execution speed <output id="speedOut">1.0×</output></label><input class="range" id="speed" type="range" min=".25" max="3" value="1" step=".05"></div><div><label class="controlLabel" for="drift">Phase drift <output id="driftOut">0.15×</output></label><input class="range" id="drift" type="range" min="0" max="1" value=".15" step=".05"></div><div style="grid-column:1/-1"><label class="controlLabel" for="scrub">Trace position <output id="traceOut">0%</output></label><input class="range" id="scrub" type="range" min="0" max="1000" value="0"></div></div><div class="controls" style="margin-top:10px"><div><label class="controlLabel" for="morphTarget">Morph destination</label><select id="morphTarget" style="width:100%;background:#171621;color:#eee3ec;border:1px solid #4a4051;border-radius:8px;padding:7px"></select></div><div><label class="controlLabel" for="morph">Geometric crossfade <output id="morphOut">0%</output></label><input class="range" id="morph" type="range" min="0" max="100" value="0"></div></div><div class="divider"></div><div class="upper">Geometric structure / cone-fit projection</div><div class="controls" style="margin:12px 0 16px"><div style="grid-column:1/-1"><label class="controlLabel" for="structure">Original 1.1 construction <output id="structureOut">85%</output></label><input class="range" id="structure" type="range" min="0" max="100" value="85" step="5"></div><div style="grid-column:1/-1"><label class="controlLabel" for="sacred">Derived sacred geometry <output id="sacredOut">22%</output></label><input class="range" id="sacred" type="range" min="0" max="100" value="22" step="2"></div></div>
 <div class="controls" style="margin-top:10px">
 <div><label class="controlLabel" for="coneProfile">Observer approximation <output id="coneOut">L / M / S</output></label><select id="coneProfile" style="width:100%;background:#171621;color:#eee3ec;border:1px solid #4a4051;border-radius:8px;padding:8px"><option value="trichromat">Standard L/M/S</option><option value="protan">Protan-like (L reduced)</option><option value="deutan">Deutan-like (M reduced)</option><option value="tritan">Tritan-like (S reduced)</option><option value="achromat">Achromatic (luminance)</option><option value="tetra">Hypothetical 4-cone RGB projection*</option></select></div>
 <div><label class="controlLabel" for="resonance">Geometry → chroma <output id="resonanceOut">65%</output></label><input class="range" id="resonance" type="range" min="0" max="100" value="65" step="5"><label class="controlLabel" for="hueMotion">Arc phase → hue <output id="hueMotionOut">55%</output></label><input class="range" id="hueMotion" type="range" min="0" max="100" value="55" step="5"></div></div>
@@ -138,43 +138,117 @@ function segmentColor(p,pt0,pt1,prev,next,u){let ang=Math.atan2(pt1[1]-pt0[1],pt
  return projected.map(v=>Math.round(clamp01(srgbEncode(v))*255));
 }
 const rgbStr=rgb=>'rgb('+rgb.join(',')+')';
-const geometryState={prominence:.56};
-// Trochos 2.0 semantic sacred geometry: meaning determines relationships, not decorative motif.
-const SEMANTIC={
- union:{words:["love","together","belong","trust","compassion","give","receive"],label:"Shared centers / overlapping domains",description:"Two circles meet to express closeness and a shared space; the original curve remains the voice."},
- inward:{words:["self","being","calm","know","one","order","object","space"],label:"Concentric belonging",description:"Nested circles give a felt center and boundary. Their radii follow the active glyph's proportions."},
- opening:{words:["hope","wonder","future","freedom","seek","start","surprise"],label:"Opening / unfolding",description:"A partial arc opens toward a future direction instead of sealing the feeling inside a pattern."},
- tension:{words:["fear","anger","conflict","shame","grief","apart","longing","stop"],label:"Tension / disrupted symmetry",description:"An incomplete circle and a shifted triangular gesture give tension without altering the lexical curve."},
- motion:{words:["time","change","move","present","past","end","remember","forget"],label:"Continuity / directional motion",description:"A gently displaced arc and a single directional relation preserve movement and the passage of time."},
- plurality:{words:["many","quantity","other","pride","joy","speak"],label:"Multiplicity / resonance",description:"Small repeated arcs imply resonance without a dense Flower-of-Life grid."}
-};
-function semanticFor(recipe){
- const id=(recipe.id||"").toLowerCase();
- for(const [kind,spec] of Object.entries(SEMANTIC))if(spec.words.includes(id))return {kind,...spec};
- if(recipe.group==="Example")return {kind:"union",...SEMANTIC.union,label:"Composed relationships"};
- return {kind:"inward",...SEMANTIC.inward};
-}
-function constructionSvg(svg,p,j,mini,phase,trace,recipe){
- const sem=semanticFor(recipe),x=p.x*111,y=p.y*111,R=p.scale*111*.95;
- const angle=p.rotation+p.phase*.08+phase*.012-PI/2;
- const tone=rgbStr(segmentColor(p,[0,0],[1,0],[0,-1],[2,1],.32));
- const opacity=geometryState.prominence*(mini?.68:.8);
+const geometryState={prominence:.85,sacred:.22};
+function constructionSvg(svg,p,j,mini,phase,trace){
+ // Core spatial grammar: two canonical Euclidean constructs; not extra trochoid families.
+ // The same part scale, rotation and center parameterize its circle and equilateral triangle.
+ const x=p.x*111,y=p.y*111;
+ const base=p.scale*111;
+ const radius=base*(p.family==='nephroid'?1.01:p.family==='deltoid'?.88:.98);
+ const angle=p.rotation+phase*.018*(j%2?-1:1)+p.phase*.1-PI/2;
+ const rgb=segmentColor(p,[0,0],[1,0],[0,-1],[2,1],.32);
+ const color=rgbStr(rgb);
+ const opacity=geometryState.prominence*(mini?.88:.98);
  const stage=mini?1:clamp01(trace/(.82+j*.07));
- const common={fill:"none",stroke:tone,"stroke-width":mini?1.65:1.18,opacity:opacity,"vector-effect":"non-scaling-stroke"};
- function circle(cx,cy,r,weight=1,alpha=1){mk("circle",{cx,cy,r,...common,"stroke-width":(mini?1.65:1.18)*weight,opacity:opacity*alpha,"pathLength":100,"stroke-dasharray":"100 100","stroke-dashoffset":(100*(1-stage)).toFixed(2)},svg)}
- function arc(cx,cy,r,a,b,alpha=.7){const sx=cx+r*Math.cos(a),sy=cy+r*Math.sin(a),ex=cx+r*Math.cos(b),ey=cy+r*Math.sin(b);mk("path",{d:"M"+sx.toFixed(3)+" "+sy.toFixed(3)+" A"+r.toFixed(3)+" "+r.toFixed(3)+" 0 "+(b-a>Math.PI?1:0)+" 1 "+ex.toFixed(3)+" "+ey.toFixed(3),...common,opacity:opacity*alpha,"pathLength":100,"stroke-dasharray":"100 100","stroke-dashoffset":(100*(1-stage)).toFixed(2)},svg)}
- function triangle(cx,cy,rr,rot,alpha=.65){const pts=Array.from({length:3},(_,i)=>[cx+rr*Math.cos(rot+i*TAU/3),cy+rr*Math.sin(rot+i*TAU/3)]);mk("path",{d:"M"+pts.map(v=>v.map(t=>t.toFixed(3)).join(" ")).join(" L")+" Z",...common,opacity:opacity*alpha,"stroke-linejoin":"round",pathLength:100,"stroke-dasharray":"100 100","stroke-dashoffset":(100*(1-stage)).toFixed(2)},svg)}
- if(sem.kind==="union"){ // two equal circles, center separation = radius: vesica relationship
-  const r=R*.73,cx=x+(j%2?R*.07:0);circle(cx-r/2,y,r,1,.88);circle(cx+r/2,y,r,1,.88);if(!mini)arc(cx,y,R*.36,angle,angle+Math.PI,.38);
- }else if(sem.kind==="inward"){circle(x,y,R,1,.8);circle(x,y,R*(1/Math.sqrt(3)),.77,.45);if(p.family==="deltoid")triangle(x,y,R*.76,angle,.5);
- }else if(sem.kind==="opening"){arc(x,y,R,angle+.32,angle+TAU-.78,.85);arc(x,y,R*.65,angle-.2,angle+Math.PI*.9,.4);triangle(x+R*.13,y-R*.06,R*.52,angle,.4);
- }else if(sem.kind==="tension"){arc(x,y,R,angle+.22,angle+TAU-.65,.8);triangle(x+R*.14,y-R*.09,R*.67,angle+.22,.54);
- }else if(sem.kind==="motion"){arc(x,y,R*.92,angle+.15,angle+Math.PI*1.75,.75);arc(x+R*.09,y,R*.61,angle,angle+Math.PI*1.34,.38);triangle(x+R*.09,y,R*.41,angle,.38);
- }else{circle(x,y,R*.9,1,.74);for(let k=0;k<3;k++)arc(x,y,R*(.42+k*.19),angle+k*.7,angle+k*.7+Math.PI*.66,.37)}
+ // Circular frame is primary; a second circle for relational and enclosing curves.
+ const circle=mk('circle',{cx:x,cy:y,r:radius,fill:'none',stroke:color,'stroke-width':mini?3.1:2.05,opacity:opacity*.88,'stroke-dasharray':'100 100','pathLength':'100','stroke-dashoffset':(100*(1-stage)).toFixed(2)},svg);
+ if(p.family==='nephroid'||p.family==='astroid'){
+   mk('circle',{cx:x,cy:y,r:radius*.64,fill:'none',stroke:color,'stroke-width':mini?1.5:1.05,opacity:opacity*.44,'stroke-dasharray':'100 100',pathLength:100,'stroke-dashoffset':(100*(1-stage)).toFixed(2)},svg);
+ }
+ // Exact equilateral triangle; its inscribed-circle ratio is controlled by geometry.
+ const triRadius=radius*(p.family==='deltoid'?.99:.91);
+ const pts=Array.from({length:3},(_,i)=>[x+triRadius*Math.cos(angle+i*TAU/3),y+triRadius*Math.sin(angle+i*TAU/3)]);
+ const d='M'+pts.map(v=>v.map(t=>t.toFixed(3)).join(' ')).join(' L')+' Z';
+ mk('path',{d,fill:'none',stroke:color,'stroke-width':mini?3.0:1.85,'stroke-linejoin':'round',opacity:opacity*.94,'stroke-dasharray':'100 100',pathLength:100,'stroke-dashoffset':(100*(1-stage)).toFixed(2)},svg);
+ if(!mini && stage>.5){
+   // Marker points emphasize triangle–circle incidence without pictograms.
+   for(let i=0;i<3;i++)mk('circle',{cx:pts[i][0],cy:pts[i][1],r:1.85,fill:color,opacity:opacity*.72},svg);
+ }
+}
+// Sacred geometry is derived from 1.1 trajectories, never chosen by an emotion-name lookup.
+// The exact 1.1 constructionSvg() immediately above remains the canonical construction.
+const GOLDEN_INV=2/(1+Math.sqrt(5));
+const symmetryOrder=Object.freeze({astroid:4,deltoid:3,nephroid:2,cardioid:1,cycloid:1,curtate:1,prolate:1});
+const geometryCache=new WeakMap();
+const cross2=(ax,ay,bx,by)=>ax*by-ay*bx;
+function segmentCrossing(a,b,c,d){
+ const ux=b[0]-a[0],uy=b[1]-a[1],vx=d[0]-c[0],vy=d[1]-c[1],den=cross2(ux,uy,vx,vy);
+ if(Math.abs(den)<1e-8)return null;
+ const wx=c[0]-a[0],wy=c[1]-a[1],t=cross2(wx,wy,vx,vy)/den,u=cross2(wx,wy,ux,uy)/den;
+ if(t<0||t>1||u<0||u>1)return null;
+ return [a[0]+t*ux,a[1]+t*uy];
+}
+function geomRelation(recipe){
+ if(geometryCache.has(recipe))return geometryCache.get(recipe);
+ const paths=recipe.parts.map(p=>points(p,0,120));
+ const shapes=paths.map((pts,i)=>{
+  const unique=pts.slice(0,-1);const centroid=unique.reduce((sum,q)=>[sum[0]+q[0],sum[1]+q[1]],[0,0]).map(v=>v/unique.length);
+  const radius=Math.max(...unique.map(q=>Math.hypot(q[0]-centroid[0],q[1]-centroid[1])));
+  return {center:centroid,radius,order:symmetryOrder[recipe.parts[i].family]||1,part:recipe.parts[i]};
+ });
+ const relations=[];let totalCrossings=0,closest=Infinity;
+ for(let i=0;i<paths.length;i++)for(let j=i+1;j<paths.length;j++){
+  const a=paths[i],b=paths[j];let intersections=[],best=Infinity,near=null;
+  for(let k=0;k<a.length-1;k++)for(let m=0;m<b.length-1;m++){
+   const p=segmentCrossing(a[k],a[k+1],b[m],b[m+1]);
+   if(p&&!intersections.some(q=>Math.hypot(q[0]-p[0],q[1]-p[1])<3))intersections.push(p);
+   // The nearest-approach estimate is sampled at segment endpoints;
+   // it is not reported as the exact distance between smooth curves.
+   const dx=a[k][0]-b[m][0],dy=a[k][1]-b[m][1],dist=dx*dx+dy*dy;
+   if(dist<best){best=dist;near=[a[k],b[m]]}
+  }
+  const distance=intersections.length?0:Math.sqrt(best);
+  closest=Math.min(closest,distance);totalCrossings+=intersections.length;
+  const pa=recipe.parts[i],pb=recipe.parts[j];
+  const turn=Math.atan2(Math.sin(pa.rotation-pb.rotation),Math.cos(pa.rotation-pb.rotation));
+  relations.push({i,j,intersections:intersections.slice(0,3),count:intersections.length,nearest:near,distance,
+    scaleRatio:Math.min(pa.scale,pb.scale)/Math.max(pa.scale,pb.scale),
+    angularDifference:Math.abs(turn)});
+ }
+ const result={shapes,relations,crossings:totalCrossings,nearestDistance:Number.isFinite(closest)?closest:null,
+   familyOrders:shapes.map(s=>s.order),goldenSubdivision:GOLDEN_INV};
+ geometryCache.set(recipe,result);return result;
+}
+function sacredGeometrySvg(svg,recipe,mini,trace){
+ if(geometryState.sacred<=0)return;
+ const g=geomRelation(recipe),strength=geometryState.sacred*(mini?.55:1),stage=mini?1:clamp01(trace*1.3);
+ if(stage<=0)return;
+ function strokeFor(i){const p=recipe.parts[i],a=points(p,0,20);return rgbStr(segmentColor(p,a[1],a[2],a[0],a[3],.25))}
+ function guide(tag,attrs,i){return mk(tag,{fill:'none',stroke:strokeFor(i),'stroke-width':mini?.7:.85,opacity:strength*.72,'vector-effect':'non-scaling-stroke',...attrs},svg)}
+ // Single-part harmonic subdivision follows each curve's actual centroid and maximal extent.
+ // No pictograms are inserted; no lexical recipe, curve, or semantic hue is altered.
+ g.shapes.forEach((shape,i)=>{
+  const p=shape.part,r=shape.radius*GOLDEN_INV*.74;
+  if(!(r>3))return;
+  const angle=p.rotation+p.phase*.13-Math.PI/2;
+  const span=TAU/Math.max(2,shape.order);
+  const a=[shape.center[0]+r*Math.cos(angle),shape.center[1]+r*Math.sin(angle)];
+  const b=[shape.center[0]+r*Math.cos(angle+span),shape.center[1]+r*Math.sin(angle+span)];
+  guide('path',{d:'M'+a.map(t=>t.toFixed(3)).join(' ')+' A'+r.toFixed(3)+' '+r.toFixed(3)+' 0 '+(span>Math.PI?1:0)+' 1 '+b.map(t=>t.toFixed(3)).join(' '),
+    opacity:strength*.39*stage},i);
+ });
+ // A visible crossing is marked at its computed intersection. Separated curves are
+ // related only where their actual closest sampled points approach one another.
+ g.relations.forEach(rel=>{
+  if(rel.intersections.length){
+   rel.intersections.slice(0,2).forEach(pt=>guide('circle',{cx:pt[0].toFixed(3),cy:pt[1].toFixed(3),
+     r:mini?1.8:2.7,opacity:strength*.78*stage},rel.i));
+  }else if(rel.nearest&&rel.distance<Math.max(12,Math.min(g.shapes[rel.i].radius,g.shapes[rel.j].radius)*.5)){
+   const [a,b]=rel.nearest;guide('line',{x1:a[0].toFixed(3),y1:a[1].toFixed(3),
+     x2:b[0].toFixed(3),y2:b[1].toFixed(3),opacity:strength*.48*stage,'stroke-dasharray':'2 5'},rel.i);
+  }
+ });
+}
+function relationDescription(recipe){
+ const m=geomRelation(recipe),orders=[...new Set(m.familyOrders)].sort((a,b)=>a-b);
+ const symmetry=orders.length===1?orders[0]+'-fold curve symmetry':orders.join(' / ')+'-fold curve symmetries';
+ const relation=m.relations.length?m.crossings+' sampled crossings; nearest approach '+(m.nearestDistance||0).toFixed(2)+' units':'single-curve construction';
+ return symmetry+' · '+relation+' · golden subdivision '+GOLDEN_INV.toFixed(4)+' · '+recipe.layout+' layout';
 }
 function shapeSvg(recipe,mini=false,phase=0,trace=1,withPen=false){
  const svg=mk('svg',{xmlns:NS,viewBox:'-175 -175 350 350'},document.createDocumentFragment());
- recipe.parts.forEach((p,j)=>constructionSvg(svg,p,j,mini,phase,trace,recipe));
+ recipe.parts.forEach((p,j)=>constructionSvg(svg,p,j,mini,phase,trace));
+ sacredGeometrySvg(svg,recipe,mini,trace);
  recipe.parts.forEach((p,j)=>{
   // Constant arc-length samples: color bands remain local to the curve even when its rotation drifts.
   const pts=points(p,phase*.07*(j%2?-1:1),mini?180:480);
@@ -211,9 +285,9 @@ let current=0,elapsed=0,last=0,playing=true,speed=1,drift=.15,phaseTime=0,animTo
 L.forEach((r,i)=>{const o=document.createElement('option');o.value=i;o.textContent=r.name;$('morphTarget').appendChild(o)});$('morphTarget').value=String(morphTarget);
 function renderAtlas(){const q=$('search').value.toLowerCase().trim(),cat=$('filter').value;filtered=L.map((r,i)=>({r,i})).filter(({r})=>(cat==='all'||r.group===cat)&&(`${r.name} ${r.gloss} ${r.parts.map(p=>p.family).join(' ')}`.toLowerCase().includes(q)));const container=$('recipes');container.replaceChildren();for(let {r,i} of filtered){let row=document.createElement('button');row.className='recipe'+(i===current?' active':'');row.setAttribute('aria-label',`Open ${r.name}`);row.appendChild(shapeSvg(r,true));const txt=document.createElement('div');const name=document.createElement('b');name.textContent=r.name;const sub=document.createElement('span');sub.textContent=`${r.group} · ${r.parts.map(p=>p.family).join(' · ')}`;txt.append(name,sub);row.appendChild(txt);row.onclick=()=>select(i);container.appendChild(row)}}
 function select(i){current=(i+L.length)%L.length;elapsed=0;renderAtlas();update()}
-function update(){const r=L[current],sem=semanticFor(r);$('semanticNote').textContent=sem.label+' — '+sem.description;const frac=Math.max(0,Math.min(1,elapsed/10));$('category').textContent=r.group.toUpperCase()+` / ${r.layout.toUpperCase()}`;$('name').textContent=r.name;$('gloss').textContent=r.gloss;$('count').textContent=`${String(current+1).padStart(2,'0')} / ${L.length}`;updateConeBars();const scene=$('scene');scene.replaceChildren();$('guides').replaceChildren();const svg=shapeSvg(r,false,phaseTime,frac,true);while(svg.firstChild)scene.appendChild(svg.firstChild);if(morphMix>0){const other=shapeSvg(L[morphTarget],false,phaseTime,frac,true);const layer=mk('g',{opacity:morphMix.toFixed(3)},scene);while(other.firstChild)layer.appendChild(other.firstChild);for(let c of Array.from(scene.children)){if(c!==layer)c.setAttribute('opacity',String(1-morphMix))}}if(r.group==='Example'&&r.id.includes('cat')){const p=r.parts;for(let j=1;j<4;j++){mk('line',{x1:0,y1:0,x2:p[j].x*111,y2:p[j].y*111,stroke:rgbStr(segmentColor(p[j],[0,0],[1,0],[0,-1],[2,1],.4)),'stroke-width':.9,'stroke-dasharray':'3 6',opacity:.45},$('guides'))}}else{$('guides').replaceChildren()}if(r.group==='Example'&&r.id.includes('partner')){let pulse=.45+.4*Math.sin(phaseTime*2)**2;for(let yy of [-10,10]){mk('circle',{cx:0,cy:yy,r:4,fill:'#ffd3df',opacity:pulse},scene)}}$('status').textContent=frac>=1?'COMPLETE · CLOSED':`EXECUTING · ${Math.floor(frac*100)}%`;$('progress').style.width=(frac*100)+'%';$('pct').textContent=Math.round(frac*100)+'%';$('traceOut').textContent=Math.round(frac*100)+'%';$('scrub').value=Math.round(frac*1000);$('spec').textContent=JSON.stringify(r,null,2)}
+function update(){const r=L[current];$('semanticNote').textContent='Mathematical relationships · '+relationDescription(r);const frac=Math.max(0,Math.min(1,elapsed/10));$('category').textContent=r.group.toUpperCase()+` / ${r.layout.toUpperCase()}`;$('name').textContent=r.name;$('gloss').textContent=r.gloss;$('count').textContent=`${String(current+1).padStart(2,'0')} / ${L.length}`;updateConeBars();const scene=$('scene');scene.replaceChildren();$('guides').replaceChildren();const svg=shapeSvg(r,false,phaseTime,frac,true);while(svg.firstChild)scene.appendChild(svg.firstChild);if(morphMix>0){const other=shapeSvg(L[morphTarget],false,phaseTime,frac,true);const layer=mk('g',{opacity:morphMix.toFixed(3)},scene);while(other.firstChild)layer.appendChild(other.firstChild);for(let c of Array.from(scene.children)){if(c!==layer)c.setAttribute('opacity',String(1-morphMix))}}if(r.group==='Example'&&r.id.includes('cat')){const p=r.parts;for(let j=1;j<4;j++){mk('line',{x1:0,y1:0,x2:p[j].x*111,y2:p[j].y*111,stroke:rgbStr(segmentColor(p[j],[0,0],[1,0],[0,-1],[2,1],.4)),'stroke-width':.9,'stroke-dasharray':'3 6',opacity:.45},$('guides'))}}else{$('guides').replaceChildren()}if(r.group==='Example'&&r.id.includes('partner')){let pulse=.45+.4*Math.sin(phaseTime*2)**2;for(let yy of [-10,10]){mk('circle',{cx:0,cy:yy,r:4,fill:'#ffd3df',opacity:pulse},scene)}}$('status').textContent=frac>=1?'COMPLETE · CLOSED':`EXECUTING · ${Math.floor(frac*100)}%`;$('progress').style.width=(frac*100)+'%';$('pct').textContent=Math.round(frac*100)+'%';$('traceOut').textContent=Math.round(frac*100)+'%';$('scrub').value=Math.round(frac*1000);$('spec').textContent=JSON.stringify(r,null,2)}
 function tick(time){if(!document.body.contains($('large')))return;if(!last)last=time;const dt=Math.min((time-last)/1000,.06);last=time;if(playing){elapsed+=dt*speed;if(elapsed>=12.5){if($('loop').checked)elapsed=0;else{elapsed=12.5;playing=false;$('play').textContent='Play'}}phaseTime+=dt*drift;}update();requestAnimationFrame(tick)}
-$('structure').oninput=e=>{geometryState.prominence=+e.target.value/100;$('structureOut').textContent=e.target.value+'%';renderAtlas();update()};$('coneProfile').onchange=e=>{colorState.profile=e.target.value;$('coneOut').textContent=e.target.selectedOptions[0].textContent;renderAtlas();update()};$('resonance').oninput=e=>{colorState.resonance=+e.target.value/100;$('resonanceOut').textContent=e.target.value+'%';renderAtlas();update()};$('hueMotion').oninput=e=>{colorState.hueMotion=+e.target.value/100;$('hueMotionOut').textContent=e.target.value+'%';renderAtlas();update()};
+$('structure').oninput=e=>{geometryState.prominence=+e.target.value/100;$('structureOut').textContent=e.target.value+'%';renderAtlas();update()};$('sacred').oninput=e=>{geometryState.sacred=+e.target.value/100;$('sacredOut').textContent=e.target.value+'%';renderAtlas();update()};$('coneProfile').onchange=e=>{colorState.profile=e.target.value;$('coneOut').textContent=e.target.selectedOptions[0].textContent;renderAtlas();update()};$('resonance').oninput=e=>{colorState.resonance=+e.target.value/100;$('resonanceOut').textContent=e.target.value+'%';renderAtlas();update()};$('hueMotion').oninput=e=>{colorState.hueMotion=+e.target.value/100;$('hueMotionOut').textContent=e.target.value+'%';renderAtlas();update()};
 $('play').onclick=()=>{playing=!playing;if(playing&&elapsed>=12.5)elapsed=0;$('play').textContent=playing?'Pause':'Play'};
 $('restart').onclick=()=>{elapsed=0;phaseTime=0;playing=true;$('play').textContent='Pause';update()};$('prev').onclick=()=>select(current-1);$('next').onclick=()=>select(current+1);
 $('morphTarget').onchange=e=>{morphTarget=+e.target.value;update()};$('morph').oninput=e=>{morphMix=+e.target.value/100;$('morphOut').textContent=e.target.value+'%';update()};$('speed').oninput=e=>{speed=+e.target.value;$('speedOut').textContent=speed.toFixed(2)+'×'};$('drift').oninput=e=>{drift=+e.target.value;$('driftOut').textContent=drift.toFixed(2)+'×'};$('scrub').oninput=e=>{elapsed=(+e.target.value/1000)*10;update()};$('search').oninput=renderAtlas;$('filter').onchange=renderAtlas;
@@ -223,6 +297,6 @@ $('svg').onclick=()=>download(L[current].id+'.svg',cleanSVG(),'image/svg+xml');
 $('json').onclick=()=>{const val=JSON.stringify(L[current],null,2);if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(val).then(()=>{$('json').textContent='Copied';setTimeout(()=>$('json').textContent='Copy recipe JSON',1100)}).catch(()=>download(L[current].id+'.json',val,'application/json'));else download(L[current].id+'.json',val,'application/json')};
 $('catalogJson').onclick=()=>download('trochos-catalog.json',JSON.stringify({name:'Trochos',version:'1.1',units:'relative',color:{model:'OKLCH geometry coupling',observerProjection:colorState.profile,resonance:colorState.resonance,hueMotion:colorState.hueMotion},catalog:L},null,2),'application/json');
 $('png').onclick=()=>{const src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(cleanSVG()),im=new Image();im.onload=()=>{const c=document.createElement('canvas');c.width=c.height=1200;c.getContext('2d').drawImage(im,0,0,1200,1200);c.toBlob(blob=>{if(!blob)return;const a=document.createElement('a'),url=URL.createObjectURL(blob);a.href=url;a.download=L[current].id+'.png';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)},'image/png')};im.src=src};
-window.Trochos={version:'2.0.0-beta.2',semanticFor,semanticFamilies:SEMANTIC,families:F,catalog:L,point:ppoint,points,pathData,render:shapeSvg,select,exportSVG:cleanSVG,colorState,geometryState,segmentColor,coneApproximation};
+window.Trochos={version:'2.0.0-beta.3',geomRelation,relationDescription,segmentCrossing,families:F,catalog:L,point:ppoint,points,pathData,render:shapeSvg,select,exportSVG:cleanSVG,colorState,geometryState,segmentColor,coneApproximation};
 renderAtlas();update();requestAnimationFrame(tick);
 </script></body></html>

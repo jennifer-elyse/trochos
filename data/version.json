@@ -1,6 +1,6 @@
 {
   "name": "Trochos",
-  "version": "2.0.0-beta.2",
+  "version": "2.0.0-beta.3",
   "major": 2,
   "channel": "sacred-geometry",
   "previous": {
@@ -9,6 +9,8 @@
     "viewer": "versions/1.1/index.html"
   },
   "production": false,
-  "description": "Emotion-first Trochos with subtle meaning-linked sacred geometry",
-  "visualDiff": "compare.html"
+  "description": "1.1 parametric construction preserved; subtle sacred accents derived from real glyph curve mathematics",
+  "visualDiff": "compare.html",
+  "defaultViewer": "index.html",
+  "compare": "compare.html"
 }

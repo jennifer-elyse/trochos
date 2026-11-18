@@ -4,7 +4,7 @@ A browser-based, dependency-free geometric writing-system prototype with 44 lexi
 
 ## Explore
 
-Open `index.html` to experience the original emotional Trochos language extended with subtle geometry selected by each glyph's meaning (2.0.0-beta.2). Use `compare.html` for a visual comparison against the frozen 1.1 renderer.
+Open `index.html` to experience the original emotional Trochos language extended with subtle geometry computed from each glyph's actual parametric curves, crossings, proximity and symmetry (2.0.0-beta.3). Use `compare.html` for a visual comparison against the frozen 1.1 renderer.
 
 ## Deployment
 
@@ -21,3 +21,7 @@ This is an exploratory symbolic visual language, not a proven lossless encoding 
 ## Experimental sacred geometry
 
 The `sacred-geometry` branch extends the emotion-first Trochos viewer. The earlier standalone experiment remains in `sacred-geometry.html` for reference, but is not the 2.0 language experience. See `docs/semantic-geometry.md`.
+
+## Version titles
+
+`/` loads Trochos 2.0 by default, with prominent 1.1 and 2.0 title links. `/v1.html` wraps the unmodified 1.1 archive with the same navigation; `/compare.html` performs the graphical diff.
