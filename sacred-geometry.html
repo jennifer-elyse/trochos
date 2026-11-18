@@ -1,19 +1,27 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Trochos — Sacred Geometry Laboratory</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Trochos 2.0 — Sacred Geometry & Visual Diff</title>
 <style>
-:root{color-scheme:dark;--bg:#0b0c13;--panel:#171723;--line:#3c3446;--ink:#f7e9f2;--muted:#beb0c4;--accent:#e6b4c8}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:radial-gradient(ellipse at top,#302033,var(--bg) 60%);font:14px/1.5 system-ui,sans-serif}header,main,footer{max-width:1320px;margin:auto;padding:22px}header{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}h1{font-size:clamp(25px,3vw,39px);font-weight:500;margin:5px 0}h2{font-size:18px;font-weight:550;margin:0 0 10px}h3{font-size:14px;margin:0 0 8px}p{margin:5px 0 12px;color:var(--muted)}a{color:#f0bed4}button,select,input{font:inherit}select,button{background:#292131;color:var(--ink);padding:9px 11px;border:1px solid #59475e;border-radius:8px;cursor:pointer}button:hover{background:#423047}input[type=range]{width:100%;accent-color:var(--accent)}label{display:block;margin-bottom:15px;color:var(--muted)}label span{float:right;color:var(--ink)}.eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#cc9eb8}.layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(275px,.8fr);gap:16px}.panel{border:1px solid var(--line);background:linear-gradient(145deg,#211b2b,#11131c);border-radius:15px;padding:19px}.canvas{background:radial-gradient(circle,#252036,#10111c 67%);border:1px solid #393144;border-radius:12px;display:grid;place-items:center;min-height:440px}.canvas svg{width:min(100%,680px);height:auto;aspect-ratio:1}.actions{display:flex;gap:9px;flex-wrap:wrap;margin:14px 0}.legend{font-size:12px;color:var(--muted)}.legend strong{color:var(--ink)}.track{border-left:2px solid #6e526f;padding-left:20px}.event{position:relative;margin:15px 0 20px}.event:before{content:"";position:absolute;left:-26px;top:7px;width:10px;height:10px;border-radius:50%;background:#e5b7c8}.event small{color:#dbacc2}.event p{font-size:12px}.event a{font-size:12px}.separated{margin-top:19px;border-top:1px solid var(--line);padding-top:18px}.metadata{font:12px/1.65 ui-monospace,monospace;white-space:pre-wrap;color:#cbbfd0;overflow-wrap:anywhere}.control-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.control-grid label{margin:0} .control-grid select{width:100%;margin:4px 0 12px}.note{font-size:12px;border-left:2px solid #a6819b;padding:8px 12px;background:#241e2b}@media(max-width:900px){.layout{grid-template-columns:1fr}.canvas{min-height:290px}} 
-</style></head><body><header><div><div class="eyebrow">Trochos / experimental branch</div><h1>Sacred Geometry Laboratory</h1><p>Exact circle lattices, polygonal symmetries and curve relations—without changing existing lexical recipes.</p></div><a href="./index.html">Return to original viewer</a></header>
+:root{color-scheme:dark;--bg:#0b0c13;--panel:#171723;--line:#3c3446;--ink:#f7e9f2;--muted:#beb0c4;--accent:#e6b4c8}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:radial-gradient(ellipse at top,#302033,var(--bg) 60%);font:14px/1.5 system-ui,sans-serif}header,main,footer{max-width:1430px;margin:auto;padding:22px}header{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}h1{font-size:clamp(25px,3vw,39px);font-weight:500;margin:5px 0}h2{font-size:18px;font-weight:550;margin:0 0 10px}h3{font-size:14px;margin:0 0 8px}p{margin:5px 0 12px;color:var(--muted)}a{color:#f0bed4}button,select,input{font:inherit}select,button{background:#292131;color:var(--ink);padding:9px 11px;border:1px solid #59475e;border-radius:8px;cursor:pointer}button:hover{background:#423047}input[type=range]{width:100%;accent-color:var(--accent)}label{display:block;margin-bottom:15px;color:var(--muted)}label span{float:right;color:var(--ink)}.eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#cc9eb8}.layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(275px,.8fr);gap:16px}.panel{border:1px solid var(--line);background:linear-gradient(145deg,#211b2b,#11131c);border-radius:15px;padding:19px}.canvas{background:radial-gradient(circle,#252036,#10111c 67%);border:1px solid #393144;border-radius:12px;display:grid;place-items:center;min-height:440px}.canvas svg{width:min(100%,680px);height:auto;aspect-ratio:1}.actions{display:flex;gap:9px;flex-wrap:wrap;margin:14px 0}.legend{font-size:12px;color:var(--muted)}.legend strong{color:var(--ink)}.track{border-left:2px solid #6e526f;padding-left:20px}.event{position:relative;margin:15px 0 20px}.event:before{content:"";position:absolute;left:-26px;top:7px;width:10px;height:10px;border-radius:50%;background:#e5b7c8}.event small{color:#dbacc2}.event p{font-size:12px}.event a{font-size:12px}.separated{margin-top:19px;border-top:1px solid var(--line);padding-top:18px}.metadata{font:12px/1.65 ui-monospace,monospace;white-space:pre-wrap;color:#cbbfd0;overflow-wrap:anywhere}.control-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.control-grid label{margin:0} .control-grid select{width:100%;margin:4px 0 12px}.note{font-size:12px;border-left:2px solid #a6819b;padding:8px 12px;background:#241e2b}@media(max-width:900px){.layout{grid-template-columns:1fr}.canvas{min-height:290px}} 
+.comparison-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.compare-tile{background:#10111b;border:1px solid #403447;border-radius:10px;padding:12px;min-width:0}.compare-tile h3{margin-bottom:10px}.compare-viewport{position:relative;width:100%;aspect-ratio:1;background:radial-gradient(circle,#262035,#0b0d14 68%);border-radius:8px;overflow:hidden}.compare-viewport svg,.compare-viewport canvas{position:absolute;inset:0;width:100%;height:100%}.compare-viewport svg{object-fit:contain}.compare-viewport canvas{object-fit:contain}.compare-controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0}.compare-controls label{margin:0;flex:1;min-width:170px}.compare-controls select{width:100%}.compare-caption{font-size:12px;color:#d5c1d2}.compare-single{max-width:650px;margin:auto}.compare-tile[hidden],.compare-viewport[hidden]{display:none}@media(max-width:690px){.comparison-grid{grid-template-columns:1fr}}</style></head><body><header><div><div class="eyebrow">Trochos 2.0.0-beta.1 / sacred-geometry</div><h1>Trochos 2 · Sacred Geometry</h1><p>Exact circle lattices, polygonal symmetries and curve relations—without changing existing lexical recipes.</p></div><a href="./versions/1.1/index.html">Open preserved Trochos 1.1</a></header>
 <main><div class="layout"><section class="panel"><h2 id="patternName">Seed of Life</h2><p id="patternText"></p><div class="canvas"><svg id="drawing" xmlns="http://www.w3.org/2000/svg" viewBox="-180 -180 360 360" role="img" aria-label="Sacred geometry construction"></svg></div><div class="actions"><button id="exportSvg">Export SVG</button><button id="exportRecipe">Export recipe JSON</button><button id="reset">Reset controls</button></div><p class="legend">Geometric semantics: <strong id="semantics"></strong></p><div class="separated"><h3>Construction recipe</h3><pre class="metadata" id="recipe"></pre></div></section>
 <aside class="panel"><h2>Geometric parameters</h2><div class="control-grid"><label>Construction<select id="pattern"><option value="vesica">Vesica piscis</option><option value="seed" selected>Seed of Life</option><option value="flower">Flower of Life</option><option value="metatron">Connected circle-center network</option><option value="fibonacci">Fibonacci square spiral</option><option value="polygons">Polygonal symmetry</option><option value="solids">Platonic solid projection</option></select></label><label>Symmetry / solid<select id="symmetry"><option value="3">3 / tetrahedron</option><option value="4">4 / cube</option><option value="5">5 / dodecahedron</option><option value="6" selected>6 / octahedron</option><option value="8">8 / icosahedron</option><option value="12">12 / extended star</option></select></label></div>
 <label>Rotation <span id="rotationValue">0°</span><input id="rotation" type="range" min="0" max="360" value="0"></label>
 <label>Scale <span id="scaleValue">100%</span><input id="scale" type="range" min="55" max="145" value="100"></label>
 <label>Chromatic resonance <span id="colorValue">65%</span><input id="color" type="range" min="0" max="100" value="65"></label>
 <label>Trochoid overlay <span id="overlayValue">45%</span><input id="overlay" type="range" min="0" max="100" value="45"></label>
-<label>Overlay glyph <select id="glyph"><option value="">None</option></select></label>
+<label>Glyph to compare and overlay <select id="glyph"><option value="">None</option></select></label>
 <p class="note">Color is a display-side mapping from angular symmetry, edge orientation and position. It does not assert physiological cone responses or religious color correspondences.</p>
 <div class="separated"><h3>Mathematical invariants</h3><p id="invariant"></p><p class="note">The circle-center network is a contemporary line construction; it is not attributed here to an ancient source. The Fibonacci construction uses integer square sizes; its finite spiral is not an exact logarithmic golden spiral.</p></div>
 </aside></div>
-<section class="panel separated" style="margin-top:18px"><div class="eyebrow">Separate cultural track · approximate chronology</div><h2>Historical interpretations and regional variations</h2><p>Shapes are mathematically reusable across traditions, but the names, meanings, and practices are not interchangeable. Dates below describe documented uses or scholarly contexts, not when a geometric construction was first invented.</p><div class="track" id="timeline"></div><p class="note">Cultural attributions are contextual notes—not part of the core Trochos grammar. Modern umbrella labels such as “sacred geometry” should not be projected backward as ancient universal terminology.</p></section></main><footer><a href="./index.html">Trochos viewer</a> · <a href="./docs/sacred-geometry.md">Implementation and historical notes</a></footer>
+<section class="panel separated" id="versionComparison" style="margin-top:18px">
+<div class="eyebrow">Version comparison / fixed baseline 1.1</div><h2>Graphical diff · Trochos 1.1 vs 2.0</h2>
+<p>Compare the same glyph using the actual pinned Trochos 1.1 renderer and the current Trochos 2.0 construction. Select a glyph above to align both versions. The color difference also includes new background geometry, so not all changed pixels imply a change to the lexical glyph.</p>
+<div class="compare-controls"><label>Diff view <select id="diffMode"><option value="side">Side by side</option><option value="blend">Blend overlay</option><option value="heatmap">Pixel difference heatmap</option></select></label><label>2.0 opacity <span id="blendValue">50%</span><input id="blend" type="range" min="0" max="100" value="50"></label><label>Pixel threshold <span id="thresholdValue">20</span><input id="threshold" type="range" min="0" max="255" value="20"></label></div>
+<div class="comparison-grid" id="compareGrid"><div class="compare-tile" id="baselineTile"><h3>Trochos 1.1 · original geometry-first</h3><div class="compare-viewport" id="baselineViewport"><svg id="previousDrawing" viewBox="-180 -180 360 360" role="img" aria-label="Trochos 1.1 reference"></svg></div></div><div class="compare-tile" id="candidateTile"><h3 id="candidateTitle">Trochos 2.0 · sacred geometry</h3><div class="compare-viewport" id="candidateViewport"><svg id="candidateDrawing" viewBox="-180 -180 360 360" role="img" aria-label="Trochos 2.0 glyph and sacred geometry"></svg><canvas id="pixelDiff" width="720" height="720" hidden aria-label="Pixel difference visualization"></canvas></div></div></div>
+<p class="compare-caption" id="diffStats" role="status">Loading the preserved version 1.1 renderer…</p><div class="actions"><button id="exportCompare">Export comparison SVG</button><button id="exportDiff">Export difference PNG</button><button id="exportDiffJson">Export difference metadata</button></div>
+<iframe id="oldRenderer" src="./versions/1.1/index.html" title="Pinned Trochos 1.1 renderer" hidden loading="eager"></iframe>
+</section>
+<section class="panel separated" style="margin-top:18px"><div class="eyebrow">Separate cultural track · approximate chronology</div><h2>Historical interpretations and regional variations</h2><p>Shapes are mathematically reusable across traditions, but the names, meanings, and practices are not interchangeable. Dates below describe documented uses or scholarly contexts, not when a geometric construction was first invented.</p><div class="track" id="timeline"></div><p class="note">Cultural attributions are contextual notes—not part of the core Trochos grammar. Modern umbrella labels such as “sacred geometry” should not be projected backward as ancient universal terminology.</p></section></main><footer><a href="./versions/1.1/index.html">Trochos 1.1 archive</a> · <a href="./docs/sacred-geometry.md">Implementation and historical notes</a></footer>
 <script>
 "use strict";
 const $=id=>document.getElementById(id), NS="http://www.w3.org/2000/svg", TAU=2*Math.PI, PHI=(1+Math.sqrt(5))/2;
@@ -71,15 +79,93 @@ while(svg.firstChild)svg.removeChild(svg.firstChild);svg.append(group);
 const previous=window.__trochosParent;window.__trochosParent=group;
 geometry();if(st.glyph&&st.overlay>0){const g=glyphCatalog.find(g=>g.id===st.glyph);if(g)g.parts.forEach((part,i)=>{const node=el("path",{d:trochoidPath(part),fill:"none",stroke:color(i+4,9),"stroke-width":2.4,opacity:st.overlay,"vector-effect":"non-scaling-stroke"},group)})}
 window.__trochosParent=previous;
-$("recipe").textContent=JSON.stringify({schema:"trochos.sacred-geometry/1",construction:st.pattern,symmetry:st.n,rotationDegrees:st.rotation,scale:st.scale,color:{model:"angular HSL display mapping",resonance:st.resonance},trochoid:{glyph:st.glyph||null,opacity:st.overlay},meaning:p.meaning,history:"separate contextual timeline"},null,2);
+$("recipe").textContent=JSON.stringify({schema:"trochos.sacred-geometry/2",construction:st.pattern,symmetry:st.n,rotationDegrees:st.rotation,scale:st.scale,color:{model:"angular HSL display mapping",resonance:st.resonance},trochoid:{glyph:st.glyph||null,opacity:st.overlay},meaning:p.meaning,history:"separate contextual timeline",version:"2.0.0-beta.1",baseline:{version:"1.1",commit:"19bc2e4f5916bf6939fbf25b74f0a467f40e95cd"}},null,2);
 }
 const originalEl=el; // all generated primitives belong to the transformed group
 el=function(tag,attrs={},parent){const target=parent||window.__trochosParent||$("drawing");const e=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,String(v));target.append(e);return e};
 function save(name,data,type){const u=URL.createObjectURL(new Blob([data],{type}));const a=document.createElement("a");a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}
 $("exportSvg").onclick=()=>{const svg=$("drawing").cloneNode(true);svg.setAttribute("xmlns",NS);svg.setAttribute("width","1200");svg.setAttribute("height","1200");save("trochos-"+st.pattern+".svg",new XMLSerializer().serializeToString(svg),"image/svg+xml")};
 $("exportRecipe").onclick=()=>save("trochos-"+st.pattern+".json",$("recipe").textContent,"application/json");
-$("reset").onclick=()=>{st.pattern="seed";st.n=6;st.rotation=0;st.scale=1;st.resonance=.65;st.overlay=.45;st.glyph="";sync()};
+$("reset").onclick=()=>{st.pattern="seed";st.n=6;st.rotation=0;st.scale=1;st.resonance=.65;st.overlay=.45;st.glyph="being";sync()};
 function sync(){for(const [id,val] of Object.entries({pattern:st.pattern,symmetry:st.n,rotation:st.rotation,scale:Math.round(st.scale*100),color:Math.round(st.resonance*100),overlay:Math.round(st.overlay*100),glyph:st.glyph}))$(id).value=val;for(const [id,v] of Object.entries({rotationValue:st.rotation+"°",scaleValue:Math.round(st.scale*100)+"%",colorValue:Math.round(st.resonance*100)+"%",overlayValue:Math.round(st.overlay*100)+"%"}))$(id).textContent=v;render()}
 ["pattern","symmetry","rotation","scale","color","overlay","glyph"].forEach(id=>$(id).addEventListener(id==="pattern"||id==="symmetry"||id==="glyph"?"change":"input",()=>{st.pattern=$("pattern").value;st.n=+$("symmetry").value;st.rotation=+$("rotation").value;st.scale=+$("scale").value/100;st.resonance=+$("color").value/100;st.overlay=+$("overlay").value/100;st.glyph=$("glyph").value;sync()}));
 sync();
+
+const compare={ready:false,legacy:null,changed:null,error:null};
+const cloneSvg=(svg)=>document.importNode(svg,true);
+function legacyMarkup(){
+ const f=$("oldRenderer");const w=f.contentWindow;
+ if(!w||!w.Trochos||!Array.isArray(w.Trochos.catalog))throw Error("Pinned 1.1 runtime not initialized");
+ const idx=w.Trochos.catalog.findIndex(g=>g.id===st.glyph);
+ if(idx<0)throw Error("Glyph not found in 1.1 catalog");
+ const old=w.Trochos.catalog[idx];
+ // Render using the original 1.1 functions and canonical recipe, not reimplemented 2.0 curves.
+ const node=w.Trochos.render(old,false,0,1,false);
+ node.setAttribute("viewBox","-180 -180 360 360");
+ return document.importNode(node,true);
+}
+function differenceSvg(){const svg=$("drawing").cloneNode(true);svg.setAttribute("viewBox","-180 -180 360 360");return svg}
+function syncCompare(){
+ if(!compare.ready)return;
+ const previous=$("previousDrawing"),candidate=$("candidateDrawing");
+ try{
+  const old=legacyMarkup(),newer=differenceSvg();
+  previous.replaceChildren(...Array.from(old.childNodes));
+  candidate.replaceChildren(...Array.from(newer.childNodes));
+  compare.error=null;
+  renderDifference();
+ }catch(e){compare.error=e.message;$("diffStats").textContent="Comparison unavailable: "+e.message}
+}
+$("oldRenderer").addEventListener("load",()=>{try{const w=$("oldRenderer").contentWindow;if(!w.Trochos)throw Error("1.1 API unavailable");compare.ready=true;syncCompare()}catch(e){$("diffStats").textContent="1.1 renderer could not be initialized: "+e.message}});
+function serializedSvg(svg){const s=svg.cloneNode(true);s.setAttribute("xmlns",NS);s.setAttribute("width","720");s.setAttribute("height","720");s.setAttribute("viewBox","-180 -180 360 360");return new XMLSerializer().serializeToString(s)}
+function imageFromSvg(svg){return new Promise((resolve,reject)=>{const blob=new Blob([serializedSvg(svg)],{type:"image/svg+xml"}),url=URL.createObjectURL(blob),img=new Image();img.onload=()=>{URL.revokeObjectURL(url);resolve(img)};img.onerror=()=>{URL.revokeObjectURL(url);reject(Error("SVG rasterization failed"))};img.src=url})}
+let diffGeneration=0;
+async function renderDifference(){
+ const generation=++diffGeneration, mode=$("diffMode").value,alpha=+$("blend").value/100;
+ $("blendValue").textContent=Math.round(alpha*100)+"%";$("thresholdValue").textContent=$("threshold").value;
+ const previous=$("previousDrawing"),candidate=$("candidateDrawing"),canvas=$("pixelDiff");
+ const oldTile=$("baselineTile"),newTile=$("candidateTile"),grid=$("compareGrid");
+ grid.classList.toggle("compare-single",mode!=="side");
+ oldTile.hidden=mode!=="side";newTile.hidden=false;
+ previous.style.opacity="1";candidate.style.opacity=mode==="blend"?String(alpha):"1";
+ canvas.hidden=mode!=="heatmap";candidate.hidden=mode==="heatmap";
+ if(mode==="blend"){ // matched coordinate frames, full opacity baseline and adjustable current overlay
+  $("candidateViewport").replaceChildren();
+  const base=previous.cloneNode(true);base.id="blendBaseline";
+  base.removeAttribute("style");
+  base.style.opacity="1";
+  candidate.style.opacity=String(alpha);
+  $("candidateViewport").append(base,candidate,canvas);
+ }else if($("candidateViewport").querySelector("#blendBaseline")){$("candidateViewport").querySelector("#blendBaseline").remove()}
+ if(!compare.ready||compare.error)return;
+ try{
+ const [oldImg,newImg]=await Promise.all([imageFromSvg(previous),imageFromSvg(candidate)]);
+ if(generation!==diffGeneration)return;
+ const a=document.createElement("canvas"),b=document.createElement("canvas");a.width=b.width=720;a.height=b.height=720;
+ const ca=a.getContext("2d",{willReadFrequently:true}),cb=b.getContext("2d",{willReadFrequently:true});
+ ca.drawImage(oldImg,0,0,720,720);cb.drawImage(newImg,0,0,720,720);
+ const x=ca.getImageData(0,0,720,720).data,y=cb.getImageData(0,0,720,720).data;
+ const ctx=canvas.getContext("2d"),heat=ctx.createImageData(720,720),z=heat.data,threshold=+$("threshold").value;
+ let changed=0,mean=0;const count=720*720;
+ for(let i=0;i<x.length;i+=4){
+  // Compare straight-alpha appearance composited onto the same dark background.
+  let max=0;
+  for(let c=0;c<3;c++){const v1=(x[i+c]*x[i+3]+13*(255-x[i+3]))/255,v2=(y[i+c]*y[i+3]+13*(255-y[i+3]))/255;max=Math.max(max,Math.abs(v1-v2))}
+  mean+=max;if(max>threshold)changed++;
+  const intensity=Math.min(255,max*3.2);
+  z[i]=intensity;z[i+1]=Math.round(intensity*.28);z[i+2]=Math.round(255-intensity*.8);z[i+3]=max>threshold?255:0;
+ }
+ ctx.putImageData(heat,0,0);const percent=100*changed/count;
+ compare.changed={glyph:st.glyph||null,mode,threshold,changedPixels:changed,totalPixels:count,changedPercent:+percent.toFixed(2),meanChannelDifference:+(mean/count).toFixed(2),baseline:"1.1",candidate:"2.0.0-beta.1"};
+ $("diffStats").textContent="Aligned glyph: "+st.glyph+" · "+changed.toLocaleString()+" / "+count.toLocaleString()+" changed pixels ("+percent.toFixed(2)+"%) at threshold "+threshold+". Mean maximum-channel delta: "+(mean/count).toFixed(2)+"/255. Pixels include geometry and color differences.";
+ }catch(e){compare.error=e.message;$("diffStats").textContent="Diff rendering failed: "+e.message}
+}
+["diffMode","blend","threshold"].forEach(id=>$(id).addEventListener(id==="diffMode"?"change":"input",renderDifference));
+$("exportDiff").onclick=()=>{if(!compare.changed)return;const c=$("pixelDiff");c.toBlob(b=>{if(!b)return;const url=URL.createObjectURL(b),a=document.createElement("a");a.href=url;a.download="trochos-1.1-vs-2.0-"+st.glyph+"-diff.png";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)},"image/png")};
+$("exportDiffJson").onclick=()=>{if(compare.changed)save("trochos-version-diff.json",JSON.stringify(compare.changed,null,2),"application/json")};
+$("exportCompare").onclick=()=>{if(!compare.ready)return;const outer=document.createElementNS(NS,"svg");outer.setAttribute("xmlns",NS);outer.setAttribute("viewBox","0 0 760 380");outer.setAttribute("width","1520");outer.setAttribute("height","760");for(const [i,source] of [$("previousDrawing"),$("candidateDrawing")].entries()){const nested=source.cloneNode(true);nested.setAttribute("x",String(i*380));nested.setAttribute("y","0");nested.setAttribute("width","380");nested.setAttribute("height","380");outer.append(nested)}save("trochos-1.1-vs-2.0-"+st.glyph+".svg",new XMLSerializer().serializeToString(outer),"image/svg+xml")};
+
+const previousSync=sync;
+sync=function(){previousSync();syncCompare()};
+if(!st.glyph){st.glyph="being";sync()}
 </script></body></html>

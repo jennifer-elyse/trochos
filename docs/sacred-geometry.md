@@ -30,3 +30,20 @@ Do not flatten different traditions into one chronology of invention; dates desc
 
 ## Validation backlog
 Add CI tests for closed paths, numeric tolerance, non-degenerate edges, rotational invariance, pixel snapshot regressions, data schema validation, and parity with the primary renderer before merging.
+
+## Trochos 2.0 preview and visual regression
+
+The branch's root index.html is now the 2.0.0-beta.1 entrypoint, with sacred-geometry.html retained as an alias. The exact 1.1 index.html from commit 19bc2e4 is archived at versions/1.1/index.html; the 1.1 catalog is frozen at versions/1.1/glyphs.json and also available through the original /data/glyphs.json. Do not silently replace this baseline when evolving 2.0.
+
+### Graphical diff
+The version-comparison section instantiates the pinned 1.1 runtime in a same-origin iframe. Its published window.Trochos.render() generates the baseline glyph for the selected recipe. The candidate is the current 2.0 SVG, including the selected Trochos glyph overlay and sacred geometry, and both use a viewBox of -180 -180 360 360.
+
+- Side by side: baseline glyph and candidate construction at equal coordinates.
+- Blend: original behind the candidate, adjustable candidate opacity.
+- Heatmap: both SVGs rasterized in the browser at 720 × 720 transparent pixels then compared against the same dark reference background. Per-pixel delta is maximum absolute difference of composited R/G/B channels, with an adjustable 0-255 threshold. Highlighting and percentage are **appearance differences**, not a claim of equivalent/inequivalent symbolic meaning.
+- Export both versions as a combined SVG, heatmap as PNG, and measurement JSON.
+
+All rendering and diffing is local in the browser, without third-party diff services. The 1.1 renderer is a locked snapshot and the new v2 app must never request the live production site to obtain old-version images.
+
+### Release semantics
+2.0.0-beta.1 is a pre-release on sacred-geometry, not a production release. The 1.1 lexical catalog remains unchanged and is still accessible in the archive. Cultural variations remain separate from geometric semantics. Main/Netlify production remain unchanged until explicit merge and deploy.
