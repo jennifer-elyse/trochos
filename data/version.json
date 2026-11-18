@@ -1,6 +1,6 @@
 {
   "name": "Trochos",
-  "version": "2.0.0-beta.1",
+  "version": "2.0.0-beta.2",
   "major": 2,
   "channel": "sacred-geometry",
   "previous": {
@@ -8,5 +8,7 @@
     "commit": "19bc2e4f5916bf6939fbf25b74f0a467f40e95cd",
     "viewer": "versions/1.1/index.html"
   },
-  "production": false
+  "production": false,
+  "description": "Emotion-first Trochos with subtle meaning-linked sacred geometry",
+  "visualDiff": "compare.html"
 }
