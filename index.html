@@ -43,7 +43,7 @@ const chronology=[
 ];
 const timeline=$("timeline");chronology.forEach(item=>{const e=document.createElement("div");e.className="event";const date=document.createElement("small");date.textContent=item.date;const name=document.createElement("h3");name.textContent=item.culture;const para=document.createElement("p");para.textContent=item.body;const a=document.createElement("a");a.href=item.source;a.target="_blank";a.rel="noopener noreferrer";a.textContent="Historical reference";e.append(date,name,para,a);timeline.append(e)});
 let glyphCatalog=[];
-fetch("./data/glyphs.json").then(r=>{if(!r.ok)throw Error("catalog unavailable");return r.json()}).then(data=>{glyphCatalog=data.catalog||[];for(const g of glyphCatalog){const opt=document.createElement("option");opt.value=g.id;opt.textContent=g.name;$("glyph").append(opt)}render()}).catch(()=>{$("invariant").textContent="The Trochos overlay catalog could not be loaded; geometric constructions remain available."});
+fetch("./data/glyphs.json").then(r=>{if(!r.ok)throw Error("catalog unavailable");return r.json()}).then(data=>{glyphCatalog=data.catalog||[];for(const g of glyphCatalog){const opt=document.createElement("option");opt.value=g.id;opt.textContent=g.name;$("glyph").append(opt)}render();syncCompare()}).catch(()=>{$("invariant").textContent="The Trochos overlay catalog could not be loaded; geometric constructions remain available."});
 const st={pattern:"seed",n:6,rotation:0,scale:1,resonance:.65,overlay:.45,glyph:""};
 function el(tag,attrs={},parent=$("drawing")){const e=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,String(v));parent.append(e);return e}
 function polar(r,a){return [r*Math.cos(a),r*Math.sin(a)]}
@@ -117,7 +117,7 @@ function syncCompare(){
  }catch(e){compare.error=e.message;$("diffStats").textContent="Comparison unavailable: "+e.message}
 }
 $("oldRenderer").addEventListener("load",()=>{try{const w=$("oldRenderer").contentWindow;if(!w.Trochos)throw Error("1.1 API unavailable");compare.ready=true;syncCompare()}catch(e){$("diffStats").textContent="1.1 renderer could not be initialized: "+e.message}});
-function serializedSvg(svg){const s=svg.cloneNode(true);s.setAttribute("xmlns",NS);s.setAttribute("width","720");s.setAttribute("height","720");s.setAttribute("viewBox","-180 -180 360 360");return new XMLSerializer().serializeToString(s)}
+function serializedSvg(svg){const s=svg.cloneNode(true);s.removeAttribute("hidden");s.removeAttribute("style");s.setAttribute("xmlns",NS);s.setAttribute("width","720");s.setAttribute("height","720");s.setAttribute("viewBox","-180 -180 360 360");return new XMLSerializer().serializeToString(s)}
 function imageFromSvg(svg){return new Promise((resolve,reject)=>{const blob=new Blob([serializedSvg(svg)],{type:"image/svg+xml"}),url=URL.createObjectURL(blob),img=new Image();img.onload=()=>{URL.revokeObjectURL(url);resolve(img)};img.onerror=()=>{URL.revokeObjectURL(url);reject(Error("SVG rasterization failed"))};img.src=url})}
 let diffGeneration=0;
 async function renderDifference(){
