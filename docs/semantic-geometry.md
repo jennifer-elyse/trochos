@@ -18,7 +18,7 @@ These meanings are authored design conventions, **not universal psychological or
 Retains the 1.1 line-derived OKLCH-to-sRGB approximation and observer-projection controls. No independently assigned spiritual colors.
 
 ## Backward compatibility
-The immutable archived version remains in versions/1.1/index.html, with its own copy of data/glyphs.json. Keep the 1.1 archive immutable and expose a separate side-by-side, blend, and pixel heatmap diff page. Never replace the emotional viewer with the independent sacred-geometry laboratory.
+The immutable archived version remains in versions/1.1/index.html, with its own copy of data/glyphs.json. Keep the 1.1 archive immutable. The `compare.html` page loads both real renderers in same-origin iframes, chooses matching catalog IDs, and shows side-by-side, blend, and pixel heatmap. Thresholded channel-delta percentages can be downloaded with matched SVGs. Never replace the emotional viewer with the independent sacred-geometry laboratory.
 
 ## Cultural variations
 Keep historical contexts on a separate expandable track. Euclidean constructions, Christian mandorlas, regional Islamic ornament and South Asian practice-specific yantras have distinct histories, and resemblance does not imply identity of origin or meaning. Historical dating and attribution should be independently corroborated, and modern terms should not be projected backward.
