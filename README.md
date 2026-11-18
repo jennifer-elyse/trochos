@@ -20,8 +20,17 @@ This is an exploratory symbolic visual language, not a proven lossless encoding 
 
 ## Experimental sacred geometry
 
-The `sacred-geometry` branch extends the emotion-first Trochos viewer. The earlier standalone experiment remains in `sacred-geometry.html` for reference, but is not the 2.0 language experience. See `docs/semantic-geometry.md`.
+The `sacred-geometry` branch extends the emotion-first Trochos viewer. `sacred-geometry.html` now redirects to the corrected 2.0 language viewer; the superseded pattern gallery is available only in Git history. See `docs/semantic-geometry.md`.
 
 ## Version titles
 
 `/` loads Trochos 2.0 by default, with prominent 1.1 and 2.0 title links. `/v1.html` wraps the unmodified 1.1 archive with the same navigation; `/compare.html` performs the graphical diff.
+
+## Local run and regression checks
+
+```bash
+npm run dev     # serves http://localhost:8080 (Trochos 2.0 is the default)
+npm test        # checks 1.1 construction and 46-glyph SVG equivalence
+```
+
+Navigation at the top of the viewer switches between Trochos 1.1 (archived runtime) and Trochos 2.0 (current). Use `compare.html` for graphical diff.

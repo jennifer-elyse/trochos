@@ -1,0 +1,11 @@
+{
+  "name": "trochos",
+  "version": "2.0.0-beta.3",
+  "private": true,
+  "description": "Trochos 2.0 — a parametric mathematical language of emotions and relations",
+  "scripts": {
+    "dev": "python3 -m http.server 8080",
+    "start": "python3 -m http.server 8080",
+    "test": "node --test tests/geometry.test.mjs"
+  }
+}
