@@ -31,3 +31,11 @@ The historical contexts remain in their own expandable line and do not influence
 ## Validation and precision
 
 The original construction function, `ppoint()`, `points()`, and `segmentColor()` can be directly compared against their 1.1 source. Tests must check finite coordinates, intersection parity, construction equivalence with the sacred accent disabled, color pipeline preservation, and that the original archived source stays immutable. Pixel diff percentages are appearance metrics, not a measure of meaning.
+
+## Side by side and per-word controls (2.0.0-beta.4)
+
+The default viewer retains the 1.1 page layout and the original 46 recipes. Both synchronized canvases use the original mathematical renderer. Left explicitly suppresses sacred accents; right uses a separate per-word boolean. Atlas and selected-word checkboxes modify only the presentation preference, not canonical recipes. Preferences are stored under `trochos:sacred-lines:v2` in localStorage when available.
+
+`glyphGraph(recipe)` is the unified public graph export. `declaredRelation` preserves the authored layout (nested, concentric, radial, intersection, tangent). Each sampled pair carries an independent observed classification, crossings, center-distance, approximate closest approach, containment fraction, phase difference, relative angle, and scale ratio. Differences between declared semantics and numeric observations are not silently resolved. Glyph and catalog JSON exports include the full graph.
+
+The same animation frame, phase drift, morph, original construction prominence, and color response are drawn simultaneously. Sacred intensity can be zero while keeping the original mathematics and relation graph intact. The 1.1 archive remains immutable.
