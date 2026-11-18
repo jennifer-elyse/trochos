@@ -59,7 +59,7 @@ function launch(html) {
   const script = html.split("<script>")[1]?.split("</script>")[0];
   assert.ok(script, "Inline script available");
   const run = new Function("document","window","requestAnimationFrame","XMLSerializer","Blob","URL","Image","navigator",script +
-    ";return {catalog:L,shapeSvg,points,ppoint,segmentColor,geometryState,geomRelation:typeof geomRelation==='function'?geomRelation:null}");
+    ";return {catalog:L,shapeSvg,points,ppoint,segmentColor,geometryState,geomRelation:typeof geomRelation==='function'?geomRelation:null,glyphGraph:typeof glyphGraph==='function'?glyphGraph:null,wordSacredEnabled:typeof wordSacredEnabled==='function'?wordSacredEnabled:null,setWordSacred:typeof setWordSacred==='function'?setWordSacred:null}");
   return { ...run(doc,window,()=>{},class{},class{},class{},class{},{}),elements,window };
 }
 const oldApp = launch(v1);
@@ -99,4 +99,44 @@ test("Version 2 is the default; top-level version titles link to 1.1 and 2",()=>
   assert.match(v2,/href="\.\/index\.html" aria-current="page"/);
   assert.match(compare,/class="versionTitles"/);
   assert.match(readFileSync(join(ROOT,"v1.html"),"utf8"),/versions\/1\.1\/index\.html/);
+});
+
+
+test("All 46 glyphs retain their declared relation type and a numeric relation graph",()=>{
+ const allowed=new Set(["nested","concentric","intersection","radial","tangent"]);
+ newApp.catalog.forEach(recipe=>{
+  const graph=newApp.glyphGraph(recipe);
+  assert.ok(allowed.has(graph.declaredRelation),recipe.id);
+  assert.equal(graph.declaredRelation,recipe.layout,recipe.id);
+  assert.equal(graph.observed.pairs.length,recipe.parts.length*(recipe.parts.length-1)/2,recipe.id);
+  graph.observed.pairs.forEach(pair=>{
+   assert.equal(pair.declared,recipe.layout);
+   for(const value of [pair.centerDistance,pair.nearestDistance,pair.phaseDifference,pair.angularDifference,pair.scaleRatio])
+    assert.ok(Number.isFinite(value),recipe.id);
+   assert.ok(pair.containment.aInB>=0&&pair.containment.aInB<=1,recipe.id);
+   assert.ok(pair.containment.bInA>=0&&pair.containment.bInA<=1,recipe.id);
+  });
+ });
+});
+
+test("Sacred lines can be toggled independently for each word without changing its recipe",()=>{
+ const love=newApp.catalog.find(g=>g.id==="love");
+ const canonical=JSON.stringify(love);
+ assert.equal(newApp.wordSacredEnabled("love"),true);
+ assert.equal(newApp.wordSacredEnabled("hope"),true);
+ newApp.setWordSacred("love",false);
+ assert.equal(newApp.wordSacredEnabled("love"),false);
+ assert.equal(newApp.wordSacredEnabled("hope"),true);
+ assert.equal(JSON.stringify(love),canonical);
+ newApp.setWordSacred("love",true);
+ assert.equal(newApp.wordSacredEnabled("love"),true);
+});
+
+test("1.1 layout houses side-by-side views and an independent toggle for every atlas word",()=>{
+ assert.match(v2,/id="largeV1"/);
+ assert.match(v2,/id="large"/);
+ assert.match(v2,/id="sacredWord"/);
+ assert.match(v2,/id="relationList"/);
+ assert.match(v2,/wordSacredToggle/);
+ assert.equal(newApp.elements.get("recipes").children.length,46);
 });
