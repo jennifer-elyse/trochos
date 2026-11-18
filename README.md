@@ -17,3 +17,7 @@ The lexical inventory limits each glyph to at most three curves. The two specifi
 Color modulation follows geometric properties including phase, tangent orientation, and curvature, evaluated through an OKLCH-to-sRGB approximation. Observer modes are visualization projections, not physiological measurements or validated simulations. Hypothetical four-cone vision cannot be reproduced on a conventional RGB screen.
 
 This is an exploratory symbolic visual language, not a proven lossless encoding of every natural-language utterance.
+
+## Experimental sacred geometry
+
+The `sacred-geometry` branch includes a separate [Sacred Geometry Laboratory](sacred-geometry.html) with exact circle constructions, polygonal symmetry, Platonic solid projections, Fibonacci-square exploration, mathematical color, optional overlays from the Trochos glyph catalog, SVG/JSON export, and a culturally differentiated chronological annotation track. See [implementation notes](docs/sacred-geometry.md). It is not part of production `main`.
